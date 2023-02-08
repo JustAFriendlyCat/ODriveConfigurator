@@ -1,0 +1,3870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ODriveConfigurator</class>
+ <widget class="QMainWindow" name="ODriveConfigurator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>602</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>602</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ODriveConfigurator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>8</number>
+      </property>
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QTreeWidget" name="odriveTree">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>170</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string>ODrive</string>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>General</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Can</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Axis0</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Config</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Can</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>General Lockin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Calibration Lockin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensorless Ramp</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Controller</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Autotuning</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Encoder</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Motor</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Current Control</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fet Thermistor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Motor Thermistor</string>
+           </property>
+          </item>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Axis1</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Config</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Can</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>General Lockin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Calibration Lockin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensorless Ramp</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Controller</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Autotuning</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Encoder</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Motor</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Config</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Current Control</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fet Thermistor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Motor Thermistor</string>
+           </property>
+          </item>
+         </item>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widgetGroup" native="true">
+        <widget class="QWidget" name="general" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="generalScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="generalScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_28">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="generalBox">
+                <property name="title">
+                 <string>General</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="0" column="0" rowspan="2" colspan="2">
+                  <widget class="QGroupBox" name="infoBox">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Info</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout">
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="softwareVersion_label">
+                      <property name="text">
+                       <string>Software Version:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="serialNumber">
+                      <property name="text">
+                       <string>000000000000</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="serialNumber_label">
+                      <property name="text">
+                       <string>Serial Number:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLabel" name="softwareVersion">
+                      <property name="text">
+                       <string>0.0.0</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLabel" name="hardwareVersion">
+                      <property name="text">
+                       <string>0.0.0</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="hardwareVersion_label">
+                      <property name="text">
+                       <string>Hardware Version:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="vbusVoltage_label">
+                      <property name="text">
+                       <string>VBus Voltage:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLabel" name="vbusVoltage">
+                      <property name="text">
+                       <string>0.0V</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QGroupBox" name="connectionBox">
+                   <property name="title">
+                    <string>Connection</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <item row="0" column="1">
+                     <widget class="QListWidget" name="odriveList">
+                      <property name="maximumSize">
+                       <size>
+                        <width>256</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="odriveSelect">
+                      <property name="text">
+                       <string>Select</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QGroupBox" name="controlsBox">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Controls</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="saveConfiguration">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Save Configuration</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="reboot">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Reboot</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QPushButton" name="enterDFUMode">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Enter DFU Mode</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="eraseConfiguration">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Erase Configuration</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="axisConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="axisConfigScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="axisConfigScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_25">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="axisConfigBox">
+                <property name="title">
+                 <string>Axis.Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_14">
+                 <item row="2" column="0">
+                  <widget class="QGroupBox" name="watchdogSettingsBox">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>128</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Watchdog Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_15">
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="enableWatchdogSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="enableWatchdog_label">
+                      <property name="text">
+                       <string>Enable Watchdog</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="watchdogTimeout_label">
+                      <property name="text">
+                       <string>Watchdog Timeout</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="watchdogTimeoutText"/>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="enableWatchdogSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="watchdogTimeoutSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QGroupBox" name="startupSettingsBox">
+                   <property name="title">
+                    <string>Startup Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_13">
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="startupEncoderIndexSearch_label">
+                      <property name="text">
+                       <string>Startup Encoder Index Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="startupClosedLoopControl_label">
+                      <property name="text">
+                       <string>Startup Closed Loop Control</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="startupEncoderOffsetCalibration_label">
+                      <property name="text">
+                       <string>Startup Encoder Offset Calibration</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="startupMotorCalibration_label">
+                      <property name="text">
+                       <string>Startup Motor Calibration</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="startupClosedLoopControlSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="startupHoming_label">
+                      <property name="text">
+                       <string>Startup Homing</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QComboBox" name="startupMotorCalibrationSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QComboBox" name="startupEncoderOffsetCalibrationSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QComboBox" name="startupHomingSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="startupEncoderIndexSearchSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="startupClosedLoopControlSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="startupEncoderIndexSearchSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="startupEncoderOffsetCalibrationSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QPushButton" name="startupHomingSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QPushButton" name="startupMotorCalibrationSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QGroupBox" name="stepDirSettingsBox">
+                   <property name="title">
+                    <string>Step/Dir Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_11">
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="dirGPIOPin_label">
+                      <property name="text">
+                       <string>Dir GPIO Pin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="stepGPIOPin_label">
+                      <property name="text">
+                       <string>Step GPIO Pin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="dirGPIOPinText"/>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="stepGPIOPinText"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="enableStepDirSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="stepDirAlwaysOn_label">
+                      <property name="text">
+                       <string>Step Dir Always On</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="stepDirAlwaysOnSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="enableStepDir_label">
+                      <property name="text">
+                       <string>Enable Step Dir</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="enableStepDirSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="stepDirAlwaysOnSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="dirGPIOPinSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QPushButton" name="stepGPIOPinSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QGroupBox" name="sensorlessSettingsBox">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>64</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Sensorless Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="enableSensorlessModeSelector">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="enableSensorlessMode_label">
+                      <property name="text">
+                       <string>Enable Sensorless Mode</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="enableSensorlessModeSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="axisGeneral" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="aixsGeneralScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="axisGeneralScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_26">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="axisGeneralBox">
+                <property name="title">
+                 <string>Axis</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_18">
+                 <item row="0" column="0">
+                  <widget class="QGroupBox" name="generalAxisStuffBox">
+                   <property name="title">
+                    <string>General Axis Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_16">
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="isHomed_label">
+                      <property name="text">
+                       <string>Is Homed</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="lastDriverFault_label">
+                      <property name="text">
+                       <string>Last Driver Fault</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="steps_label">
+                      <property name="text">
+                       <string>Steps</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="requestedStateSelector">
+                      <item>
+                       <property name="text">
+                        <string>UNDEFINED</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>IDLE</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>STARTUP_SEQUENCE</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>FULL_CALIBRATION_SEQUENCE</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>MOTOR_CALIBRATION</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ENCODER_INDEX_SEARCH</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ENCODER_OFFSET_CALIBRATION</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>CLOSED_LOOP_CONTROL</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>LOCKIN_SPIN</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ENCODER_DIR_FIND</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HOMING</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ENCODER_HALL_POLARITY_CALIBRATION</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ENCODER_HALL_PHASE_CALIBRATION</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="stepDirActive_label">
+                      <property name="text">
+                       <string>Step Dir Active</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="requestedState_label">
+                      <property name="text">
+                       <string>Requested State</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="currentState_label">
+                      <property name="text">
+                       <string>Current State</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="axisError_label">
+                      <property name="text">
+                       <string>Error</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="requestedStateSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" colspan="2">
+                     <widget class="QLineEdit" name="axisErrorText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" colspan="2">
+                     <widget class="QLineEdit" name="currentStateText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" colspan="2">
+                     <widget class="QLineEdit" name="isHomedText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lastDriverFaultText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1" colspan="2">
+                     <widget class="QLineEdit" name="stepDirActiveText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1" colspan="2">
+                     <widget class="QLineEdit" name="stepsText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="controllerGeneral" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_20">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>551</width>
+               <height>620</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_24">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="controllerGeneralBox">
+                <property name="title">
+                 <string>Axis.Controller</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_23">
+                 <item row="3" column="0">
+                  <widget class="QGroupBox" name="controllerStuffBox">
+                   <property name="title">
+                    <string>Controller Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_3">
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="mechanicalPower_label">
+                      <property name="text">
+                       <string>Mechanical Power</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="electricalPower_label">
+                      <property name="text">
+                       <string>Electrical Power</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="autotuningPhase_label">
+                      <property name="text">
+                       <string>Autotuning Phase</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="anticoggingValid_label">
+                      <property name="text">
+                       <string>Anticogging Valid</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="2">
+                     <widget class="QComboBox" name="moveIncrementalSelector">
+                      <property name="currentText">
+                       <string>True</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="9" column="0">
+                     <widget class="QLabel" name="moveIncremental_label">
+                      <property name="text">
+                       <string>Move Incremental</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="trajectoryDone_label">
+                      <property name="text">
+                       <string>Trajectory Done</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="1">
+                     <widget class="QLineEdit" name="moveIncrementalText">
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="inputMask">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>displacement: float        from_input_pos -&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="3">
+                     <widget class="QPushButton" name="moveIncrementalSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QLabel" name="startAnticoggingCalibration_label">
+                      <property name="text">
+                       <string>Start Anticogging Calibration</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="velocityIntegratorTorque_label">
+                      <property name="text">
+                       <string>Velocity Integrator Torque</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="3">
+                     <widget class="QPushButton" name="velocityIntegratorTorqueSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" colspan="3">
+                     <widget class="QLineEdit" name="anticoggingValidText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" colspan="3">
+                     <widget class="QLineEdit" name="autotuningPhaseText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" colspan="3">
+                     <widget class="QLineEdit" name="electricalPowerText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1" colspan="3">
+                     <widget class="QLineEdit" name="mechanicalPowerText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1" colspan="3">
+                     <widget class="QLineEdit" name="trajectoryDoneText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1" colspan="2">
+                     <widget class="QLineEdit" name="velocityIntegratorTorqueText"/>
+                    </item>
+                    <item row="7" column="1" colspan="3">
+                     <widget class="QPushButton" name="startAnticoggingCalibrationSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QGroupBox" name="errorStuffBox">
+                   <property name="title">
+                    <string>Error Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="controllerError_label">
+                      <property name="text">
+                       <string>Error</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="controllerErrorText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="lastErrorTime_label">
+                      <property name="text">
+                       <string>Last Error Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="lastErrorTimeText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QGroupBox" name="inputSettingsBox">
+                   <property name="title">
+                    <string>Input Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_21">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="inputPosition_label">
+                      <property name="text">
+                       <string>Input Position</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="inputTorqueText"/>
+                    </item>
+                    <item row="2" column="3">
+                     <widget class="QPushButton" name="sendInputVelocity">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QLineEdit" name="inputVelocityText"/>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QPushButton" name="sendInputTorque">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLineEdit" name="inputPositionText"/>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="inputVelocity_label">
+                      <property name="text">
+                       <string>Input Velocity</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <widget class="QPushButton" name="sendInputPosition">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="inputTorque_label">
+                      <property name="text">
+                       <string>Input Torque</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QGroupBox" name="setpointSettingsBox">
+                   <property name="title">
+                    <string>Setpoint Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_64">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="positionSetpoint_label">
+                      <property name="text">
+                       <string>Position Setpoint</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="positionSetpointSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="torqueSetpoint_label">
+                      <property name="text">
+                       <string>Torque Setpoint</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="positionSetpointText"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="torqueSetpointSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="torqueSetpointText"/>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="velocitySetpoint_label">
+                      <property name="text">
+                       <string>Velocity Setpoint</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="velocitySetpointText"/>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="velocitySetpointSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="encoderGeneral" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_29">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="encoderGeneralScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="encoderGeneralScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>551</width>
+               <height>674</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_30">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox">
+                <property name="title">
+                 <string>Axis.Encoder</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_31">
+                 <item row="0" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_2">
+                   <property name="title">
+                    <string>Error Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_32">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>Error</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_20">
+                      <property name="text">
+                       <string>SPI Error Rate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_2">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="3" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_3">
+                   <property name="title">
+                    <string>Info</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_33">
+                    <item row="17" column="0">
+                     <widget class="QLabel" name="label_18">
+                      <property name="text">
+                       <string>Calibration Scan Response</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Is Ready</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="0">
+                     <widget class="QLabel" name="label_19">
+                      <property name="text">
+                       <string>Absoloute Position(ONLY ABSOLOUTE ENCODERS)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="15" column="0">
+                     <widget class="QLabel" name="label_16">
+                      <property name="text">
+                       <string>Velocity Estimate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="16" column="0">
+                     <widget class="QLabel" name="label_17">
+                      <property name="text">
+                       <string>Velocity Estimate Counts</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_8">
+                      <property name="text">
+                       <string>Index Found</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>Phase</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_6">
+                      <property name="text">
+                       <string>Count in CPR</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_7">
+                      <property name="text">
+                       <string>Shadow Count</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_5">
+                      <property name="text">
+                       <string>Interpolation</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_15">
+                      <property name="text">
+                       <string>Hall State</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_18"/>
+                    </item>
+                    <item row="17" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_17"/>
+                    </item>
+                    <item row="16" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_16"/>
+                    </item>
+                    <item row="15" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_15"/>
+                    </item>
+                    <item row="8" column="0" colspan="3">
+                     <widget class="QGroupBox" name="groupBox_4">
+                      <property name="title">
+                       <string>Position Estimates</string>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_34">
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_10">
+                         <property name="text">
+                          <string>Linear Position Estimate Counts</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_9">
+                         <property name="text">
+                          <string>Linear Position Estimate</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLineEdit" name="lineEdit_9"/>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_10"/>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_13"/>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_12"/>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_14">
+                         <property name="text">
+                          <string>Circular Position Delta CPR Counts</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_13">
+                         <property name="text">
+                          <string>Circular Position Estimate CPR Counts</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_11"/>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_11">
+                         <property name="text">
+                          <string>Circular Position Estimate</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_3"/>
+                    </item>
+                    <item row="1" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_4"/>
+                    </item>
+                    <item row="2" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_5"/>
+                    </item>
+                    <item row="3" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_6"/>
+                    </item>
+                    <item row="4" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_7"/>
+                    </item>
+                    <item row="5" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_14"/>
+                    </item>
+                    <item row="6" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_8"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QGroupBox" name="groupBox_11">
+                   <property name="title">
+                    <string>Linear Count</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_43">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label">
+                      <property name="text">
+                       <string>Set Linear Count</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_19"/>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_5">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="motor" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>240</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>motor</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="axisCanConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_17">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="canConfigScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="canConfigScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_27">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="canConfigBox">
+                <property name="title">
+                 <string>Axis.Config.Can</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_22">
+                 <item row="0" column="0">
+                  <widget class="QGroupBox" name="canStuffBox">
+                   <property name="title">
+                    <string>Can Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="heartbeatRateMs_label">
+                      <property name="text">
+                       <string>Heartbeat Rate Ms</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="encoderRateMs_label">
+                      <property name="text">
+                       <string>Encoder Rate Ms</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="isExtended_label">
+                      <property name="text">
+                       <string>Is Extended</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="nodeID_label">
+                      <property name="text">
+                       <string>Node ID</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="nodeIDText"/>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="nodeIDSend">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="2">
+                     <widget class="QLineEdit" name="isExtendedText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" colspan="2">
+                     <widget class="QLineEdit" name="encoderRateMsText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" colspan="2">
+                     <widget class="QLineEdit" name="heartbeatRateMsText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="controllerConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_53">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_6">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_6">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>551</width>
+               <height>1121</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_54">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_15">
+                <property name="title">
+                 <string>Axis.Controller.Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_55">
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="pushButton_53">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_18">
+                   <property name="title">
+                    <string>PID</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_58">
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_55">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_54">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_53"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_52"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_60">
+                      <property name="text">
+                       <string>Velocity Gain</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_62">
+                      <property name="text">
+                       <string>Position Gain</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_69">
+                      <property name="text">
+                       <string>Velocity Integrator Gain</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_54"/>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_56">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QComboBox" name="comboBox_14">
+                   <item>
+                    <property name="text">
+                     <string>INACTIVE</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PASSTHROUGH</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>VEL_RAMP</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>POS_FILTER</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MIX_CHANNELS(Not implemented)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>TRAP_TRAJ</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>TORQUE_RAMP</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MIRROR</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>TUNING</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButton_45">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QComboBox" name="comboBox_13">
+                   <item>
+                    <property name="text">
+                     <string>VOLTAGE_CONTROL</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>TORQUE_CONTROL</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>VELOCITY_CONTROL</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>POSITION_CONTROL</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_68">
+                   <property name="text">
+                    <string>Input Mode</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_65">
+                   <property name="text">
+                    <string>Control Mode</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="37" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_17">
+                   <property name="title">
+                    <string>Axis Mirror Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_57">
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_65"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_80">
+                      <property name="text">
+                       <string>Mirror Ratio</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_81">
+                      <property name="text">
+                       <string>Torque Mirror Ratio</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_66"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_64"/>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_79">
+                      <property name="text">
+                       <string>Axis To Mirror</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_64">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_65">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_66">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="8" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_16">
+                   <property name="title">
+                    <string>Limit Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_56">
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_56"/>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="lineEdit_57"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_66">
+                      <property name="text">
+                       <string>Enable Torque Mode Velocity Limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_72">
+                      <property name="text">
+                       <string>Velocity Limit Tolerance</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_71">
+                      <property name="text">
+                       <string>Velocity Limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_64">
+                      <property name="text">
+                       <string>Enable Velocity Limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="comboBox_10">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_9">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_46">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_48">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_47">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QPushButton" name="pushButton_49">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_70">
+                      <property name="text">
+                       <string>Velocity Intergrator Limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="lineEdit_55"/>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QPushButton" name="pushButton_57">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="26" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_21">
+                   <property name="title">
+                    <string>Circular Setpoint Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_61">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_75">
+                      <property name="text">
+                       <string>Circular Setpoints</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_15">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_60">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_76">
+                      <property name="text">
+                       <string>Circular Setpoint Range</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_61"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_61">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_77">
+                   <property name="text">
+                    <string>Homing Speed</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_78">
+                   <property name="text">
+                    <string>Inertia</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_19">
+                   <property name="title">
+                    <string>Bandwidth Stuff</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_59">
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_84">
+                      <property name="text">
+                       <string>Mechanical Power Bandwidth</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_68">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_83">
+                      <property name="text">
+                       <string>Input Filter Bandwidth</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_68"/>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_85">
+                      <property name="text">
+                       <string>Electrical Power Bandwidth</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_69"/>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_70"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_69">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_70">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="19" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_23">
+                   <property name="title">
+                    <string>Thresholds</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_63">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_86">
+                      <property name="text">
+                       <string>Spinout Mechanical Power Threshold</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_71"/>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_71">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_87">
+                      <property name="text">
+                       <string>Spinout Electrical Power Threshold</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_72"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_72">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_67">
+                   <property name="text">
+                    <string>Enable Overspeed Error</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_20">
+                   <property name="title">
+                    <string>Ramp Rates</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_60">
+                    <item row="1" column="1" colspan="2">
+                     <widget class="QLineEdit" name="lineEdit_59"/>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QLabel" name="label_74">
+                      <property name="text">
+                       <string>Torque Ramp Rate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLineEdit" name="lineEdit_58"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_73">
+                      <property name="text">
+                       <string>Velocity Ramp Rate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QPushButton" name="pushButton_58">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <widget class="QPushButton" name="pushButton_59">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="23" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_22">
+                   <property name="title">
+                    <string>Gain Scheduling Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_62">
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_11">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_50">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_28">
+                      <property name="text">
+                       <string>Enable Gain Scheduling</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_63">
+                      <property name="text">
+                       <string>Gain Scheduling Width</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_51"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_51">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_82">
+                   <property name="text">
+                    <string>Load Encoder Axis</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QComboBox" name="comboBox_12">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="pushButton_52">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="lineEdit_62"/>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QLineEdit" name="lineEdit_63"/>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="pushButton_62">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QPushButton" name="pushButton_63">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QLineEdit" name="lineEdit_67"/>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="pushButton_67">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="controllerAutotuning" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_50">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_5">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_5">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_51">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_14">
+                <property name="title">
+                 <string>Axis.Controller.Autotuning</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_52">
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_57">
+                   <property name="text">
+                    <string>Velocity Amplitude</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_58">
+                   <property name="text">
+                    <string>Torque Amplitude</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_54">
+                   <property name="text">
+                    <string>Position Amplitude</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_29">
+                   <property name="text">
+                    <string>Frequency</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_48"/>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_47"/>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineEdit_49"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="lineEdit_50"/>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButton_41">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButton_42">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="pushButton_43">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="pushButton_44">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="encoderConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_35">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>551</width>
+               <height>819</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_36">
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="title">
+                 <string>Axis.Encoder.Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_37">
+                 <item row="4" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_6">
+                   <property name="title">
+                    <string>Index Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_38">
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_2">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_8">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_7">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_33">
+                      <property name="text">
+                       <string>Index Offset</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_21"/>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_30">
+                      <property name="text">
+                       <string>Use Index</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_27">
+                      <property name="text">
+                       <string>Use Index Offset</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QComboBox" name="comboBox_3">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_9">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="23" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_7">
+                   <property name="title">
+                    <string>Hall Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_39">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_40">
+                      <property name="text">
+                       <string>Hall Polarity</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_41">
+                      <property name="text">
+                       <string>Hall Polarity Calibrated</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_34"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_24">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="comboBox_6">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_23">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_39">
+                      <property name="text">
+                       <string>Ignore Illegal Hall State</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QComboBox" name="comboBox_5">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_22">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="24" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_8">
+                   <property name="title">
+                    <string>Pin Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_40">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_26">
+                      <property name="text">
+                       <string>Absolute SPI CS GPIO Pin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_11">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_25">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_36"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_42">
+                      <property name="text">
+                       <string>Sin/Cos GPIO Pin Sin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_23"/>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_37"/>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_26">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_43">
+                      <property name="text">
+                       <string>Sin/Cos GPIO Pin Cos</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_9">
+                   <property name="title">
+                    <string>General</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_41">
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_12">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_21">
+                      <property name="text">
+                       <string>Mode</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_34">
+                      <property name="text">
+                       <string>CPR</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox">
+                      <item>
+                       <property name="text">
+                        <string>INCREMENTAL</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HALL</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SINCOS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SPI_ABS_CUI</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SPI_ABS_AMS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SPI_ABS_AEAT</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SPI_ABS_RLS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SPI_ABS_MA732</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_24"/>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_23">
+                      <property name="text">
+                       <string>Pre Calibrated</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QComboBox" name="comboBox_7">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QPushButton" name="pushButton_16">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="5" column="0" colspan="3">
+                  <widget class="QGroupBox" name="groupBox_10">
+                   <property name="title">
+                    <string>Other Settings</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_42">
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_25">
+                      <property name="text">
+                       <string>Direction</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_40"/>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QPushButton" name="pushButton_15">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="lineEdit_27"/>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="lineEdit_28"/>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QLineEdit" name="lineEdit_30"/>
+                    </item>
+                    <item row="7" column="1">
+                     <widget class="QLineEdit" name="lineEdit_31"/>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QLineEdit" name="lineEdit_29"/>
+                    </item>
+                    <item row="8" column="1">
+                     <widget class="QLineEdit" name="lineEdit_32"/>
+                    </item>
+                    <item row="8" column="0">
+                     <widget class="QLabel" name="label_38">
+                      <property name="text">
+                       <string>Calibration Scan Omega</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QPushButton" name="pushButton_19">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_36">
+                      <property name="text">
+                       <string>Calibration Range</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_22">
+                      <property name="text">
+                       <string>Phase Offset</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_35">
+                      <property name="text">
+                       <string>Bandwidth</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QLabel" name="label_37">
+                      <property name="text">
+                       <string>Calibration Scan Distance</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_31">
+                      <property name="text">
+                       <string>Phase Offset Float</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QPushButton" name="pushButton_13">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="2">
+                     <widget class="QPushButton" name="pushButton_18">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="2">
+                     <widget class="QPushButton" name="pushButton_20">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QPushButton" name="pushButton_14">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="2">
+                     <widget class="QPushButton" name="pushButton_21">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="pushButton_17">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_24">
+                      <property name="text">
+                       <string>Enable Phase Interpolation</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_8">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="pushButton_10">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="comboBox_4">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_32">
+                      <property name="text">
+                       <string>Find Index on Lockin Only</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="lockinConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_44">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_3">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_45">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_12">
+                <property name="title">
+                 <string>Lockin Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_46">
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_46">
+                   <property name="text">
+                    <string>Ramp Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_47">
+                   <property name="text">
+                    <string>Finish on Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_45">
+                   <property name="text">
+                    <string>Ramp Time</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_49">
+                   <property name="text">
+                    <string>Acceleration</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_50">
+                   <property name="text">
+                    <string>Finish Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_51">
+                   <property name="text">
+                    <string>Finish on Velocity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_48">
+                   <property name="text">
+                    <string>Velocity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="label_52">
+                   <property name="text">
+                    <string>Finish on Encoder Index</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_20"/>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_22"/>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineEdit_25"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="lineEdit_26"/>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="lineEdit_33"/>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QLineEdit" name="lineEdit_35"/>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QLineEdit" name="lineEdit_38"/>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QLineEdit" name="lineEdit_39"/>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QLineEdit" name="lineEdit_41"/>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButton_27">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButton_28">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="pushButton_29">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="pushButton_30">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="pushButton_31">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QPushButton" name="pushButton_32">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="pushButton_33">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QPushButton" name="pushButton_34">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QPushButton" name="pushButton_35">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_44">
+                   <property name="text">
+                    <string>Current</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="calibrationLockin" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_47">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea_4">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_48">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_13">
+                <property name="title">
+                 <string>Calibration Lockin</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_49">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_43"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="lineEdit_45"/>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineEdit_44"/>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="lineEdit_46"/>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButton_37">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_61">
+                   <property name="text">
+                    <string>Current</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButton_36">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="pushButton_38">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="pushButton_40">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="pushButton_39">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_53">
+                   <property name="text">
+                    <string>Ramp Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_59">
+                   <property name="text">
+                    <string>Velocity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_55">
+                   <property name="text">
+                    <string>Ramp Time</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_56">
+                   <property name="text">
+                    <string>Acceleration</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit_42"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="canGeneral" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <widget class="QLabel" name="label_88">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>240</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>can</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="canConfig" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <widget class="QLabel" name="label_89">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>240</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>can</string>
+          </property>
+         </widget>
+        </widget>
+        <zorder>motor</zorder>
+        <zorder>axisConfig</zorder>
+        <zorder>axisGeneral</zorder>
+        <zorder>calibrationLockin</zorder>
+        <zorder>axisCanConfig</zorder>
+        <zorder>controllerAutotuning</zorder>
+        <zorder>controllerGeneral</zorder>
+        <zorder>encoderConfig</zorder>
+        <zorder>encoderGeneral</zorder>
+        <zorder>lockinConfig</zorder>
+        <zorder>controllerConfig</zorder>
+        <zorder>canConfig</zorder>
+        <zorder>canGeneral</zorder>
+        <zorder>general</zorder>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
