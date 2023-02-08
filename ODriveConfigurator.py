@@ -2,8 +2,8 @@ import sys
 import odrive
 import handlers
 
-from PyQt5.QtWidgets import *
-from PyQt5.uic import loadUi
+from PyQt6.QtWidgets import *
+from PyQt6.uic import loadUi
 
 app = QApplication(sys.argv)
 window = QMainWindow()
