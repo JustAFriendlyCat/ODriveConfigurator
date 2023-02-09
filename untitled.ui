@@ -287,7 +287,7 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_12">
                  <item row="0" column="0" rowspan="2" colspan="2">
-                  <widget class="QGroupBox" name="infoBox">
+                  <widget class="QGroupBox" name="generalInfoBox">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -310,7 +310,7 @@
                     </size>
                    </property>
                    <property name="title">
-                    <string>Info</string>
+                    <string>General Info</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout">
                     <item row="1" column="0">
@@ -1547,47 +1547,47 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-249</y>
                <width>554</width>
                <height>797</height>
               </rect>
              </property>
              <layout class="QGridLayout" name="gridLayout_30">
               <item row="0" column="0">
-               <widget class="QGroupBox" name="groupBox">
+               <widget class="QGroupBox" name="encoderGeneralBox">
                 <property name="title">
                  <string>Axis.Encoder</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_31">
                  <item row="0" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_2">
+                  <widget class="QGroupBox" name="errorInfoBox">
                    <property name="title">
-                    <string>Error Stuff</string>
+                    <string>Error Info</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_32">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_2">
+                     <widget class="QLabel" name="error_label">
                       <property name="text">
                        <string>Error</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_20">
+                     <widget class="QLabel" name="spiErrorRate_label">
                       <property name="text">
                        <string>SPI Error Rate</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_2">
+                     <widget class="QLineEdit" name="spiErrorRateText">
                       <property name="readOnly">
                        <bool>true</bool>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit">
+                     <widget class="QLineEdit" name="errorText">
                       <property name="readOnly">
                        <bool>true</bool>
                       </property>
@@ -1597,151 +1597,151 @@
                   </widget>
                  </item>
                  <item row="3" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_3">
+                  <widget class="QGroupBox" name="infoBox">
                    <property name="title">
                     <string>Info</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_33">
                     <item row="17" column="0">
-                     <widget class="QLabel" name="label_18">
+                     <widget class="QLabel" name="calibrationScanResponse_label">
                       <property name="text">
                        <string>Calibration Scan Response</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_4">
+                     <widget class="QLabel" name="isReady_label">
                       <property name="text">
                        <string>Is Ready</string>
                       </property>
                      </widget>
                     </item>
                     <item row="18" column="0">
-                     <widget class="QLabel" name="label_19">
+                     <widget class="QLabel" name="absolutePosition_label">
                       <property name="text">
-                       <string>Absoloute Position(ONLY ABSOLOUTE ENCODERS)</string>
+                       <string>Absolute Position(ONLY ABSOLOUTE ENCODERS)</string>
                       </property>
                      </widget>
                     </item>
                     <item row="15" column="0">
-                     <widget class="QLabel" name="label_16">
+                     <widget class="QLabel" name="velocityEstimate_label">
                       <property name="text">
                        <string>Velocity Estimate</string>
                       </property>
                      </widget>
                     </item>
                     <item row="16" column="0">
-                     <widget class="QLabel" name="label_17">
+                     <widget class="QLabel" name="velocityEstimateCounts_label">
                       <property name="text">
                        <string>Velocity Estimate Counts</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_8">
+                     <widget class="QLabel" name="indexFound_label">
                       <property name="text">
                        <string>Index Found</string>
                       </property>
                      </widget>
                     </item>
                     <item row="5" column="0">
-                     <widget class="QLabel" name="label_3">
+                     <widget class="QLabel" name="phase_label">
                       <property name="text">
                        <string>Phase</string>
                       </property>
                      </widget>
                     </item>
                     <item row="3" column="0">
-                     <widget class="QLabel" name="label_6">
+                     <widget class="QLabel" name="countInCpr_label">
                       <property name="text">
                        <string>Count in CPR</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_7">
+                     <widget class="QLabel" name="shadowCount_label">
                       <property name="text">
                        <string>Shadow Count</string>
                       </property>
                      </widget>
                     </item>
                     <item row="4" column="0">
-                     <widget class="QLabel" name="label_5">
+                     <widget class="QLabel" name="interpolation_label">
                       <property name="text">
                        <string>Interpolation</string>
                       </property>
                      </widget>
                     </item>
                     <item row="6" column="0">
-                     <widget class="QLabel" name="label_15">
+                     <widget class="QLabel" name="hallState_label">
                       <property name="text">
                        <string>Hall State</string>
                       </property>
                      </widget>
                     </item>
                     <item row="18" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_18"/>
+                     <widget class="QLineEdit" name="absolutePositionText"/>
                     </item>
                     <item row="17" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_17"/>
+                     <widget class="QLineEdit" name="calibrationScanResponseText"/>
                     </item>
                     <item row="16" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_16"/>
+                     <widget class="QLineEdit" name="velocityEstimateCountsText"/>
                     </item>
                     <item row="15" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_15"/>
+                     <widget class="QLineEdit" name="velocityEstimateText"/>
                     </item>
                     <item row="8" column="0" colspan="3">
-                     <widget class="QGroupBox" name="groupBox_4">
+                     <widget class="QGroupBox" name="PositionEstimatesBox">
                       <property name="title">
                        <string>Position Estimates</string>
                       </property>
                       <layout class="QGridLayout" name="gridLayout_34">
                        <item row="1" column="0">
-                        <widget class="QLabel" name="label_10">
+                        <widget class="QLabel" name="linearPositionEstimateCounts_label">
                          <property name="text">
                           <string>Linear Position Estimate Counts</string>
                          </property>
                         </widget>
                        </item>
                        <item row="0" column="0">
-                        <widget class="QLabel" name="label_9">
+                        <widget class="QLabel" name="linearPositionEstimate_Label">
                          <property name="text">
                           <string>Linear Position Estimate</string>
                          </property>
                         </widget>
                        </item>
                        <item row="0" column="1">
-                        <widget class="QLineEdit" name="lineEdit_9"/>
+                        <widget class="QLineEdit" name="linearPositionEstimateText"/>
                        </item>
                        <item row="1" column="1">
-                        <widget class="QLineEdit" name="lineEdit_10"/>
+                        <widget class="QLineEdit" name="linearPositionEstimateCountsText"/>
                        </item>
                        <item row="4" column="1">
-                        <widget class="QLineEdit" name="lineEdit_13"/>
+                        <widget class="QLineEdit" name="circularPositionDeltaCprCountsText"/>
                        </item>
                        <item row="3" column="1">
-                        <widget class="QLineEdit" name="lineEdit_12"/>
+                        <widget class="QLineEdit" name="circularPositionEstimateCprCountsText"/>
                        </item>
                        <item row="4" column="0">
-                        <widget class="QLabel" name="label_14">
+                        <widget class="QLabel" name="circularPositionDeltaCprCounts_label">
                          <property name="text">
                           <string>Circular Position Delta CPR Counts</string>
                          </property>
                         </widget>
                        </item>
                        <item row="3" column="0">
-                        <widget class="QLabel" name="label_13">
+                        <widget class="QLabel" name="circularPositionEstimateCprCounts_label">
                          <property name="text">
                           <string>Circular Position Estimate CPR Counts</string>
                          </property>
                         </widget>
                        </item>
                        <item row="2" column="1">
-                        <widget class="QLineEdit" name="lineEdit_11"/>
+                        <widget class="QLineEdit" name="circularPositionEstimateText"/>
                        </item>
                        <item row="2" column="0">
-                        <widget class="QLabel" name="label_11">
+                        <widget class="QLabel" name="circularPositionEstimate_label">
                          <property name="text">
                           <string>Circular Position Estimate</string>
                          </property>
@@ -1751,47 +1751,47 @@
                      </widget>
                     </item>
                     <item row="0" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_3"/>
+                     <widget class="QLineEdit" name="isReadyText"/>
                     </item>
                     <item row="1" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_4"/>
+                     <widget class="QLineEdit" name="indexFoundText"/>
                     </item>
                     <item row="2" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_5"/>
+                     <widget class="QLineEdit" name="shadowCountText"/>
                     </item>
                     <item row="3" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_6"/>
+                     <widget class="QLineEdit" name="countInCprText"/>
                     </item>
                     <item row="4" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_7"/>
+                     <widget class="QLineEdit" name="interpolationText"/>
                     </item>
                     <item row="5" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_14"/>
+                     <widget class="QLineEdit" name="phaseText"/>
                     </item>
                     <item row="6" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_8"/>
+                     <widget class="QLineEdit" name="hallStateText"/>
                     </item>
                    </layout>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QGroupBox" name="groupBox_11">
+                  <widget class="QGroupBox" name="linearCountBox">
                    <property name="title">
                     <string>Linear Count</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_43">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label">
+                     <widget class="QLabel" name="setLinearCount_label">
                       <property name="text">
                        <string>Set Linear Count</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_19"/>
+                     <widget class="QLineEdit" name="setLinearCountText"/>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_5">
+                     <widget class="QPushButton" name="setLinearCountSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2013,7 +2013,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-691</y>
                <width>554</width>
                <height>1239</height>
               </rect>
@@ -2187,57 +2187,57 @@
                   </widget>
                  </item>
                  <item row="37" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_17">
+                  <widget class="QGroupBox" name="axisMirrorSettings">
                    <property name="title">
                     <string>Axis Mirror Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_57">
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_65"/>
+                     <widget class="QLineEdit" name="mirrorRatioText"/>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_80">
+                     <widget class="QLabel" name="mirrorRatio_label">
                       <property name="text">
                        <string>Mirror Ratio</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_81">
+                     <widget class="QLabel" name="torqueMirrorRatio_label">
                       <property name="text">
                        <string>Torque Mirror Ratio</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLineEdit" name="lineEdit_66"/>
+                     <widget class="QLineEdit" name="torqueMirrorRatioText"/>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_64"/>
+                     <widget class="QLineEdit" name="axisToMirrorText"/>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_79">
+                     <widget class="QLabel" name="axisToMirror_label">
                       <property name="text">
                        <string>Axis To Mirror</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_64">
+                     <widget class="QPushButton" name="axisToMirrorSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_65">
+                     <widget class="QPushButton" name="mirrorRatioSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_66">
+                     <widget class="QPushButton" name="torqueMirrorRatioSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2363,20 +2363,20 @@
                   </widget>
                  </item>
                  <item row="26" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_21">
+                  <widget class="QGroupBox" name="circularSetpointSettingsBox">
                    <property name="title">
                     <string>Circular Setpoint Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_61">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_75">
+                     <widget class="QLabel" name="circularSetpoints_label">
                       <property name="text">
                        <string>Circular Setpoints</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QComboBox" name="comboBox_15">
+                     <widget class="QComboBox" name="circularSetpointsSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -2390,24 +2390,24 @@
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_60">
+                     <widget class="QPushButton" name="circularSetpointsSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_76">
+                     <widget class="QLabel" name="circularSetpointRange_label">
                       <property name="text">
                        <string>Circular Setpoint Range</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_61"/>
+                     <widget class="QLineEdit" name="circularSetpointRangeText"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_61">
+                     <widget class="QPushButton" name="circularSetpointRangeSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2431,57 +2431,57 @@
                   </widget>
                  </item>
                  <item row="25" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_19">
+                  <widget class="QGroupBox" name="bandwidthStuffBox">
                    <property name="title">
                     <string>Bandwidth Stuff</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_59">
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_84">
+                     <widget class="QLabel" name="mechanicalPowerBandwidth_label">
                       <property name="text">
                        <string>Mechanical Power Bandwidth</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_68">
+                     <widget class="QPushButton" name="inputFilterBandwidthSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_83">
+                     <widget class="QLabel" name="inputFilterBandwidth_label">
                       <property name="text">
                        <string>Input Filter Bandwidth</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_68"/>
+                     <widget class="QLineEdit" name="inputFilterBandwidthText"/>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_85">
+                     <widget class="QLabel" name="electricalPowerBandwidth_label">
                       <property name="text">
                        <string>Electrical Power Bandwidth</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_69"/>
+                     <widget class="QLineEdit" name="mechanicalPowerBandwidthText"/>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLineEdit" name="lineEdit_70"/>
+                     <widget class="QLineEdit" name="electricalPowerBandwidthText"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_69">
+                     <widget class="QPushButton" name="mechanicalPowerBandwidthSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_70">
+                     <widget class="QPushButton" name="electricalPowerBandwidthSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2491,40 +2491,40 @@
                   </widget>
                  </item>
                  <item row="19" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_23">
+                  <widget class="QGroupBox" name="thresholdsBox">
                    <property name="title">
                     <string>Thresholds</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_63">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_86">
+                     <widget class="QLabel" name="spinoutMechanicalPowerThreshold_label">
                       <property name="text">
                        <string>Spinout Mechanical Power Threshold</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_71"/>
+                     <widget class="QLineEdit" name="spinoutMechanicalPowerThresholdText"/>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_71">
+                     <widget class="QPushButton" name="spinoutMechanicalPowerThresholdSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_87">
+                     <widget class="QLabel" name="spintoutElectricalPowerThreshold_label">
                       <property name="text">
                        <string>Spinout Electrical Power Threshold</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_72"/>
+                     <widget class="QLineEdit" name="spinoutElectricalPowerThresholdText"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_72">
+                     <widget class="QPushButton" name="spinoutElectricalPowerThresholdSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2541,40 +2541,40 @@
                   </widget>
                  </item>
                  <item row="24" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_20">
+                  <widget class="QGroupBox" name="rampRatesBox">
                    <property name="title">
                     <string>Ramp Rates</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_60">
                     <item row="1" column="1" colspan="2">
-                     <widget class="QLineEdit" name="lineEdit_59"/>
+                     <widget class="QLineEdit" name="velocityRampRateText"/>
                     </item>
                     <item row="0" column="0" colspan="2">
-                     <widget class="QLabel" name="label_74">
+                     <widget class="QLabel" name="torqueRampRate_label">
                       <property name="text">
                        <string>Torque Ramp Rate</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QLineEdit" name="lineEdit_58"/>
+                     <widget class="QLineEdit" name="torqueRampRateText"/>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_73">
+                     <widget class="QLabel" name="velocityRampRate_label">
                       <property name="text">
                        <string>Velocity Ramp Rate</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="3">
-                     <widget class="QPushButton" name="pushButton_58">
+                     <widget class="QPushButton" name="velocityRampRateSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="3">
-                     <widget class="QPushButton" name="pushButton_59">
+                     <widget class="QPushButton" name="torqueRampRateSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2584,13 +2584,13 @@
                   </widget>
                  </item>
                  <item row="23" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_22">
+                  <widget class="QGroupBox" name="gainSchedulingSettingsBox">
                    <property name="title">
                     <string>Gain Scheduling Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_62">
                     <item row="0" column="1">
-                     <widget class="QComboBox" name="comboBox_11">
+                     <widget class="QComboBox" name="enableGainSchedulingSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -2604,31 +2604,31 @@
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_50">
+                     <widget class="QPushButton" name="enableGainSchedulingSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_28">
+                     <widget class="QLabel" name="enableGainScheduling_label">
                       <property name="text">
                        <string>Enable Gain Scheduling</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_63">
+                     <widget class="QLabel" name="gainSchedulingWidth_label">
                       <property name="text">
                        <string>Gain Scheduling Width</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_51"/>
+                     <widget class="QLineEdit" name="gainSchedulingWidthText"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_51">
+                     <widget class="QPushButton" name="gainSchedulingWidthSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2859,34 +2859,34 @@
          </property>
          <layout class="QGridLayout" name="gridLayout_35">
           <item row="0" column="0">
-           <widget class="QScrollArea" name="scrollArea_2">
+           <widget class="QScrollArea" name="encoderCongigScrollArea">
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
-            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <widget class="QWidget" name="encoderConfigScrollAreaWidget">
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-352</y>
                <width>554</width>
                <height>900</height>
               </rect>
              </property>
              <layout class="QGridLayout" name="gridLayout_36">
               <item row="1" column="0">
-               <widget class="QGroupBox" name="groupBox_5">
+               <widget class="QGroupBox" name="encoderConfigBox">
                 <property name="title">
                  <string>Axis.Encoder.Config</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_37">
                  <item row="4" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_6">
+                  <widget class="QGroupBox" name="indexSettingsBox">
                    <property name="title">
                     <string>Index Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_38">
                     <item row="0" column="1">
-                     <widget class="QComboBox" name="comboBox_2">
+                     <widget class="QComboBox" name="useIndexSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -2900,45 +2900,45 @@
                      </widget>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_8">
+                     <widget class="QPushButton" name="indexOffsetSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_7">
+                     <widget class="QPushButton" name="useIndexSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_33">
+                     <widget class="QLabel" name="indexOffset_label">
                       <property name="text">
                        <string>Index Offset</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_21"/>
+                     <widget class="QLineEdit" name="indexOffsetText"/>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_30">
+                     <widget class="QLabel" name="useIndex_label">
                       <property name="text">
                        <string>Use Index</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_27">
+                     <widget class="QLabel" name="useIndexOffset_label">
                       <property name="text">
                        <string>Use Index Offset</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QComboBox" name="comboBox_3">
+                     <widget class="QComboBox" name="useIndexOffsetSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -2952,7 +2952,7 @@
                      </widget>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_9">
+                     <widget class="QPushButton" name="useIndexOffsetSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -2962,37 +2962,37 @@
                   </widget>
                  </item>
                  <item row="23" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_7">
+                  <widget class="QGroupBox" name="hallSettingsBox">
                    <property name="title">
                     <string>Hall Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_39">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_40">
+                     <widget class="QLabel" name="hallPolarity_label">
                       <property name="text">
                        <string>Hall Polarity</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_41">
+                     <widget class="QLabel" name="hallPolarityCalibrated_label">
                       <property name="text">
                        <string>Hall Polarity Calibrated</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_34"/>
+                     <widget class="QLineEdit" name="hallPolarityText"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_24">
+                     <widget class="QPushButton" name="hallPolarityCalibratedSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QComboBox" name="comboBox_6">
+                     <widget class="QComboBox" name="hallPolarityCalibratedSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -3006,21 +3006,21 @@
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_23">
+                     <widget class="QPushButton" name="hallPolaritySend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_39">
+                     <widget class="QLabel" name="ignoreIllegalHallState_label">
                       <property name="text">
                        <string>Ignore Illegal Hall State</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QComboBox" name="comboBox_5">
+                     <widget class="QComboBox" name="ignoreIllegalHallStateSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -3034,7 +3034,7 @@
                      </widget>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_22">
+                     <widget class="QPushButton" name="ignoreIllegalHallStateSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -3044,57 +3044,57 @@
                   </widget>
                  </item>
                  <item row="24" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_8">
+                  <widget class="QGroupBox" name="pinSettingsBox">
                    <property name="title">
                     <string>Pin Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_40">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_26">
+                     <widget class="QLabel" name="absoluteSpiCsGpioPin_label">
                       <property name="text">
                        <string>Absolute SPI CS GPIO Pin</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_11">
+                     <widget class="QPushButton" name="absoluteSpiCsGpioPinSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_25">
+                     <widget class="QPushButton" name="sinCosGpioPinSinSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_36"/>
+                     <widget class="QLineEdit" name="sinCosGpioPinSinText"/>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_42">
+                     <widget class="QLabel" name="sinCosGpioPinSin_label">
                       <property name="text">
                        <string>Sin/Cos GPIO Pin Sin</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_23"/>
+                     <widget class="QLineEdit" name="absoluteSpiCsGpioPinText"/>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLineEdit" name="lineEdit_37"/>
+                     <widget class="QLineEdit" name="sinCosGpioPinCosText"/>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_26">
+                     <widget class="QPushButton" name="sinCosGpioPinCosSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_43">
+                     <widget class="QLabel" name="sinCosGpioPinCos_label">
                       <property name="text">
                        <string>Sin/Cos GPIO Pin Cos</string>
                       </property>
@@ -3104,41 +3104,41 @@
                   </widget>
                  </item>
                  <item row="0" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_9">
+                  <widget class="QGroupBox" name="generalEncoderSettingsBox">
                    <property name="title">
-                    <string>General</string>
+                    <string>General Encoder Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_41">
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_12">
+                     <widget class="QPushButton" name="CPRSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_21">
+                     <widget class="QLabel" name="mode_label">
                       <property name="text">
                        <string>Mode</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_6">
+                     <widget class="QPushButton" name="modeSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_34">
+                     <widget class="QLabel" name="CPR_label">
                       <property name="text">
                        <string>CPR</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QComboBox" name="comboBox">
+                     <widget class="QComboBox" name="modeSelector">
                       <item>
                        <property name="text">
                         <string>INCREMENTAL</string>
@@ -3182,17 +3182,17 @@
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_24"/>
+                     <widget class="QLineEdit" name="CPRText"/>
                     </item>
                     <item row="3" column="0">
-                     <widget class="QLabel" name="label_23">
+                     <widget class="QLabel" name="preCalibrated_label">
                       <property name="text">
                        <string>Pre Calibrated</string>
                       </property>
                      </widget>
                     </item>
                     <item row="3" column="1">
-                     <widget class="QComboBox" name="comboBox_7">
+                     <widget class="QComboBox" name="preCalibratedSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -3206,7 +3206,7 @@
                      </widget>
                     </item>
                     <item row="3" column="2">
-                     <widget class="QPushButton" name="pushButton_16">
+                     <widget class="QPushButton" name="preCalibratedSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -3216,146 +3216,146 @@
                   </widget>
                  </item>
                  <item row="5" column="0" colspan="3">
-                  <widget class="QGroupBox" name="groupBox_10">
+                  <widget class="QGroupBox" name="otherSettingsBox">
                    <property name="title">
                     <string>Other Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_42">
                     <item row="2" column="0">
-                     <widget class="QLabel" name="label_25">
+                     <widget class="QLabel" name="direction_label">
                       <property name="text">
                        <string>Direction</string>
                       </property>
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLineEdit" name="lineEdit_40"/>
+                     <widget class="QLineEdit" name="directonText"/>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QPushButton" name="pushButton_15">
+                     <widget class="QPushButton" name="directionSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="3" column="1">
-                     <widget class="QLineEdit" name="lineEdit_27"/>
+                     <widget class="QLineEdit" name="phaseOffsetText"/>
                     </item>
                     <item row="4" column="1">
-                     <widget class="QLineEdit" name="lineEdit_28"/>
+                     <widget class="QLineEdit" name="phaseOffsetFloatText"/>
                     </item>
                     <item row="6" column="1">
-                     <widget class="QLineEdit" name="lineEdit_30"/>
+                     <widget class="QLineEdit" name="calibrationRangeText"/>
                     </item>
                     <item row="7" column="1">
-                     <widget class="QLineEdit" name="lineEdit_31"/>
+                     <widget class="QLineEdit" name="calibrationScanDistanceText"/>
                     </item>
                     <item row="5" column="1">
-                     <widget class="QLineEdit" name="lineEdit_29"/>
+                     <widget class="QLineEdit" name="bandwidthText"/>
                     </item>
                     <item row="8" column="1">
-                     <widget class="QLineEdit" name="lineEdit_32"/>
+                     <widget class="QLineEdit" name="calibrationScanOmegaText"/>
                     </item>
                     <item row="8" column="0">
-                     <widget class="QLabel" name="label_38">
+                     <widget class="QLabel" name="calibrationScanOmega_label">
                       <property name="text">
                        <string>Calibration Scan Omega</string>
                       </property>
                      </widget>
                     </item>
                     <item row="6" column="2">
-                     <widget class="QPushButton" name="pushButton_19">
+                     <widget class="QPushButton" name="calibrationRangeSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="6" column="0">
-                     <widget class="QLabel" name="label_36">
+                     <widget class="QLabel" name="calibrationRange_label">
                       <property name="text">
                        <string>Calibration Range</string>
                       </property>
                      </widget>
                     </item>
                     <item row="3" column="0">
-                     <widget class="QLabel" name="label_22">
+                     <widget class="QLabel" name="phaseOffset_label">
                       <property name="text">
                        <string>Phase Offset</string>
                       </property>
                      </widget>
                     </item>
                     <item row="5" column="0">
-                     <widget class="QLabel" name="label_35">
+                     <widget class="QLabel" name="bandwidth_label">
                       <property name="text">
                        <string>Bandwidth</string>
                       </property>
                      </widget>
                     </item>
                     <item row="7" column="0">
-                     <widget class="QLabel" name="label_37">
+                     <widget class="QLabel" name="calibrationScanDistance_label">
                       <property name="text">
                        <string>Calibration Scan Distance</string>
                       </property>
                      </widget>
                     </item>
                     <item row="4" column="0">
-                     <widget class="QLabel" name="label_31">
+                     <widget class="QLabel" name="phaseOffsetFloat_label">
                       <property name="text">
                        <string>Phase Offset Float</string>
                       </property>
                      </widget>
                     </item>
                     <item row="3" column="2">
-                     <widget class="QPushButton" name="pushButton_13">
+                     <widget class="QPushButton" name="phaseOffsetSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="5" column="2">
-                     <widget class="QPushButton" name="pushButton_18">
+                     <widget class="QPushButton" name="bandwidthSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="7" column="2">
-                     <widget class="QPushButton" name="pushButton_20">
+                     <widget class="QPushButton" name="calibrationScanDistanceSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="4" column="2">
-                     <widget class="QPushButton" name="pushButton_14">
+                     <widget class="QPushButton" name="phaseOffsetFloatSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="8" column="2">
-                     <widget class="QPushButton" name="pushButton_21">
+                     <widget class="QPushButton" name="calibrationScanOmegaSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_17">
+                     <widget class="QPushButton" name="enablePhaseInterpolationSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_24">
+                     <widget class="QLabel" name="enablePhaseInterpolation_label">
                       <property name="text">
                        <string>Enable Phase Interpolation</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QComboBox" name="comboBox_8">
+                     <widget class="QComboBox" name="enablePhaseInterpolationSelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -3369,14 +3369,14 @@
                      </widget>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="pushButton_10">
+                     <widget class="QPushButton" name="findIndexOnLockinOnlySend">
                       <property name="text">
                        <string>Send</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QComboBox" name="comboBox_4">
+                     <widget class="QComboBox" name="findIndexOnLockinOnlySelector">
                       <item>
                        <property name="text">
                         <string>True</string>
@@ -3390,7 +3390,7 @@
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="label_32">
+                     <widget class="QLabel" name="findIndexOnLockinOnly_label">
                       <property name="text">
                        <string>Find Index on Lockin Only</string>
                       </property>
@@ -3437,11 +3437,11 @@
          </property>
          <layout class="QGridLayout" name="gridLayout_44">
           <item row="0" column="0">
-           <widget class="QScrollArea" name="scrollArea_3">
+           <widget class="QScrollArea" name="lockingConfigScrollArea">
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
-            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+            <widget class="QWidget" name="lockingConfigScrollAreaWidget">
              <property name="geometry">
               <rect>
                <x>0</x>
@@ -3452,159 +3452,159 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_45">
               <item row="0" column="0">
-               <widget class="QGroupBox" name="groupBox_12">
+               <widget class="QGroupBox" name="lockinConfigBox">
                 <property name="title">
                  <string>Lockin Config</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_46">
                  <item row="2" column="0">
-                  <widget class="QLabel" name="label_46">
+                  <widget class="QLabel" name="locConRampDistance_label">
                    <property name="text">
                     <string>Ramp Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="7" column="0">
-                  <widget class="QLabel" name="label_47">
+                  <widget class="QLabel" name="locConFinishOnDistance_label">
                    <property name="text">
                     <string>Finish on Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLabel" name="label_45">
+                  <widget class="QLabel" name="locConRampTime_label">
                    <property name="text">
                     <string>Ramp Time</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="0">
-                  <widget class="QLabel" name="label_49">
+                  <widget class="QLabel" name="locConAcceleration_label">
                    <property name="text">
                     <string>Acceleration</string>
                    </property>
                   </widget>
                  </item>
                  <item row="5" column="0">
-                  <widget class="QLabel" name="label_50">
+                  <widget class="QLabel" name="locConFinishDistance_label">
                    <property name="text">
                     <string>Finish Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="6" column="0">
-                  <widget class="QLabel" name="label_51">
+                  <widget class="QLabel" name="locConFinishOnVelocity_label">
                    <property name="text">
                     <string>Finish on Velocity</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="0">
-                  <widget class="QLabel" name="label_48">
+                  <widget class="QLabel" name="locConVelocity_label">
                    <property name="text">
                     <string>Velocity</string>
                    </property>
                   </widget>
                  </item>
                  <item row="8" column="0">
-                  <widget class="QLabel" name="label_52">
+                  <widget class="QLabel" name="locConFinishOnEncoderIndex_label">
                    <property name="text">
                     <string>Finish on Encoder Index</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QLineEdit" name="lineEdit_20"/>
+                  <widget class="QLineEdit" name="locConCurrentText"/>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QLineEdit" name="lineEdit_22"/>
+                  <widget class="QLineEdit" name="locConRampTimeText"/>
                  </item>
                  <item row="2" column="1">
-                  <widget class="QLineEdit" name="lineEdit_25"/>
+                  <widget class="QLineEdit" name="locConRampDistanceText"/>
                  </item>
                  <item row="3" column="1">
-                  <widget class="QLineEdit" name="lineEdit_26"/>
+                  <widget class="QLineEdit" name="locConAccelerationText"/>
                  </item>
                  <item row="4" column="1">
-                  <widget class="QLineEdit" name="lineEdit_33"/>
+                  <widget class="QLineEdit" name="locConVelocityText"/>
                  </item>
                  <item row="5" column="1">
-                  <widget class="QLineEdit" name="lineEdit_35"/>
+                  <widget class="QLineEdit" name="locConFinishDistanceText"/>
                  </item>
                  <item row="6" column="1">
-                  <widget class="QLineEdit" name="lineEdit_38"/>
+                  <widget class="QLineEdit" name="locConFinishOnVelocityText"/>
                  </item>
                  <item row="7" column="1">
-                  <widget class="QLineEdit" name="lineEdit_39"/>
+                  <widget class="QLineEdit" name="locConFinishOnDistanceText"/>
                  </item>
                  <item row="8" column="1">
-                  <widget class="QLineEdit" name="lineEdit_41"/>
+                  <widget class="QLineEdit" name="locConFinishOnEncoderIndexText"/>
                  </item>
                  <item row="0" column="2">
-                  <widget class="QPushButton" name="pushButton_27">
+                  <widget class="QPushButton" name="locConCurrentSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="2">
-                  <widget class="QPushButton" name="pushButton_28">
+                  <widget class="QPushButton" name="locConRampTimeSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="2">
-                  <widget class="QPushButton" name="pushButton_29">
+                  <widget class="QPushButton" name="locConRampDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="2">
-                  <widget class="QPushButton" name="pushButton_30">
+                  <widget class="QPushButton" name="locConAccelerationSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="2">
-                  <widget class="QPushButton" name="pushButton_31">
+                  <widget class="QPushButton" name="locConVelocitySend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="5" column="2">
-                  <widget class="QPushButton" name="pushButton_32">
+                  <widget class="QPushButton" name="locConFinishDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="6" column="2">
-                  <widget class="QPushButton" name="pushButton_33">
+                  <widget class="QPushButton" name="locConFinishOnVelocitySend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="7" column="2">
-                  <widget class="QPushButton" name="pushButton_34">
+                  <widget class="QPushButton" name="locConFinishOnDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="8" column="2">
-                  <widget class="QPushButton" name="pushButton_35">
+                  <widget class="QPushButton" name="locConFinishOnEncoderIndexSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="0">
-                  <widget class="QLabel" name="label_44">
+                  <widget class="QLabel" name="locConCurrent_label">
                    <property name="text">
                     <string>Current</string>
                    </property>
@@ -3669,89 +3669,89 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_49">
                  <item row="1" column="1">
-                  <widget class="QLineEdit" name="rampTimeText"/>
+                  <widget class="QLineEdit" name="calLocRampTimeText"/>
                  </item>
                  <item row="3" column="1">
-                  <widget class="QLineEdit" name="accelerationText"/>
+                  <widget class="QLineEdit" name="calLocAccelerationText"/>
                  </item>
                  <item row="2" column="1">
-                  <widget class="QLineEdit" name="rampDistanceText"/>
+                  <widget class="QLineEdit" name="calLocRampDistanceText"/>
                  </item>
                  <item row="4" column="1">
-                  <widget class="QLineEdit" name="velocityText"/>
+                  <widget class="QLineEdit" name="calLocVelocityText"/>
                  </item>
                  <item row="1" column="2">
-                  <widget class="QPushButton" name="rampTimeSend">
+                  <widget class="QPushButton" name="calLocRampTimeSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="0">
-                  <widget class="QLabel" name="current_label">
+                  <widget class="QLabel" name="calLocCurrent_label">
                    <property name="text">
                     <string>Current</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="2">
-                  <widget class="QPushButton" name="currentSend">
+                  <widget class="QPushButton" name="calLocCurrentSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="2">
-                  <widget class="QPushButton" name="rampDistanceSend">
+                  <widget class="QPushButton" name="calLocRampDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="2">
-                  <widget class="QPushButton" name="velocitySend">
+                  <widget class="QPushButton" name="calLocVelocitySend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="2">
-                  <widget class="QPushButton" name="accelerationSend">
+                  <widget class="QPushButton" name="calLocAccelerationSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="0">
-                  <widget class="QLabel" name="rampDistance_label">
+                  <widget class="QLabel" name="calLocRampDistance_label">
                    <property name="text">
                     <string>Ramp Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="0">
-                  <widget class="QLabel" name="velocity_label">
+                  <widget class="QLabel" name="calLocVelocity_label">
                    <property name="text">
                     <string>Velocity</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLabel" name="rampTime_label">
+                  <widget class="QLabel" name="calLocRampTime_label">
                    <property name="text">
                     <string>Ramp Time</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="0">
-                  <widget class="QLabel" name="acceleration_label">
+                  <widget class="QLabel" name="calLocAcceleration_label">
                    <property name="text">
                     <string>Acceleration</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QLineEdit" name="currentText"/>
+                  <widget class="QLineEdit" name="calLocCurrentText"/>
                  </item>
                 </layout>
                </widget>
@@ -3848,16 +3848,16 @@
         <zorder>axisConfig</zorder>
         <zorder>axisGeneral</zorder>
         <zorder>axisCanConfig</zorder>
-        <zorder>encoderConfig</zorder>
-        <zorder>encoderGeneral</zorder>
-        <zorder>lockinConfig</zorder>
         <zorder>canConfig</zorder>
         <zorder>canGeneral</zorder>
-        <zorder>calibrationLockin</zorder>
         <zorder>controllerAutotuning</zorder>
+        <zorder>controllerConfig</zorder>
+        <zorder>encoderConfig</zorder>
         <zorder>controllerGeneral</zorder>
         <zorder>general</zorder>
-        <zorder>controllerConfig</zorder>
+        <zorder>encoderGeneral</zorder>
+        <zorder>calibrationLockin</zorder>
+        <zorder>lockinConfig</zorder>
        </widget>
       </item>
      </layout>
