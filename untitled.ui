@@ -1387,27 +1387,7 @@
                     <string>Input Settings</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_21">
-                    <item row="0" column="0">
-                     <widget class="QLabel" name="inputPosition_label">
-                      <property name="text">
-                       <string>Input Position</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="2">
-                     <widget class="QLineEdit" name="inputTorqueText"/>
-                    </item>
                     <item row="2" column="3">
-                     <widget class="QPushButton" name="sendInputVelocity">
-                      <property name="text">
-                       <string>Send</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="2">
-                     <widget class="QLineEdit" name="inputVelocityText"/>
-                    </item>
-                    <item row="1" column="3">
                      <widget class="QPushButton" name="sendInputTorque">
                       <property name="text">
                        <string>Send</string>
@@ -1417,10 +1397,10 @@
                     <item row="0" column="2">
                      <widget class="QLineEdit" name="inputPositionText"/>
                     </item>
-                    <item row="2" column="0">
-                     <widget class="QLabel" name="inputVelocity_label">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="inputPosition_label">
                       <property name="text">
-                       <string>Input Velocity</string>
+                       <string>Input Position</string>
                       </property>
                      </widget>
                     </item>
@@ -1431,12 +1411,32 @@
                       </property>
                      </widget>
                     </item>
-                    <item row="1" column="0">
+                    <item row="2" column="2">
+                     <widget class="QLineEdit" name="inputTorqueText"/>
+                    </item>
+                    <item row="2" column="0">
                      <widget class="QLabel" name="inputTorque_label">
                       <property name="text">
                        <string>Input Torque</string>
                       </property>
                      </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="inputVelocity_label">
+                      <property name="text">
+                       <string>Input Velocity</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QPushButton" name="sendInputVelocity">
+                      <property name="text">
+                       <string>Send</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="2">
+                     <widget class="QLineEdit" name="inputVelocityText"/>
                     </item>
                    </layout>
                   </widget>
@@ -2013,7 +2013,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-691</y>
+               <y>0</y>
                <width>554</width>
                <height>1239</height>
               </rect>
@@ -2867,7 +2867,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-352</y>
+               <y>0</y>
                <width>554</width>
                <height>900</height>
               </rect>
@@ -3110,7 +3110,7 @@
                    </property>
                    <layout class="QGridLayout" name="gridLayout_41">
                     <item row="1" column="2">
-                     <widget class="QPushButton" name="CPRSend">
+                     <widget class="QPushButton" name="cprSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -3131,7 +3131,7 @@
                      </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QLabel" name="CPR_label">
+                     <widget class="QLabel" name="cpr_label">
                       <property name="text">
                        <string>CPR</string>
                       </property>
@@ -3182,7 +3182,7 @@
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QLineEdit" name="CPRText"/>
+                     <widget class="QLineEdit" name="cprText"/>
                     </item>
                     <item row="3" column="0">
                      <widget class="QLabel" name="preCalibrated_label">
@@ -3229,7 +3229,7 @@
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLineEdit" name="directonText"/>
+                     <widget class="QLineEdit" name="directionText"/>
                     </item>
                     <item row="2" column="2">
                      <widget class="QPushButton" name="directionSend">
@@ -3845,19 +3845,19 @@
          </widget>
         </widget>
         <zorder>motor</zorder>
-        <zorder>axisConfig</zorder>
-        <zorder>axisGeneral</zorder>
         <zorder>axisCanConfig</zorder>
         <zorder>canConfig</zorder>
-        <zorder>canGeneral</zorder>
-        <zorder>controllerAutotuning</zorder>
-        <zorder>controllerConfig</zorder>
-        <zorder>encoderConfig</zorder>
-        <zorder>controllerGeneral</zorder>
         <zorder>general</zorder>
-        <zorder>encoderGeneral</zorder>
         <zorder>calibrationLockin</zorder>
         <zorder>lockinConfig</zorder>
+        <zorder>canGeneral</zorder>
+        <zorder>axisGeneral</zorder>
+        <zorder>axisConfig</zorder>
+        <zorder>controllerConfig</zorder>
+        <zorder>controllerGeneral</zorder>
+        <zorder>controllerAutotuning</zorder>
+        <zorder>encoderGeneral</zorder>
+        <zorder>encoderConfig</zorder>
        </widget>
       </item>
      </layout>
