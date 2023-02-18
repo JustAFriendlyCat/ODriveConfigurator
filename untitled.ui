@@ -72,6 +72,11 @@
          <property name="text">
           <string>Can</string>
          </property>
+         <item>
+          <property name="text">
+           <string>Config</string>
+          </property>
+         </item>
         </item>
         <item>
          <property name="text">
@@ -1547,7 +1552,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-249</y>
+               <y>0</y>
                <width>554</width>
                <height>797</height>
               </rect>
@@ -1559,44 +1564,7 @@
                  <string>Axis.Encoder</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_31">
-                 <item row="0" column="0" colspan="3">
-                  <widget class="QGroupBox" name="errorInfoBox">
-                   <property name="title">
-                    <string>Error Info</string>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_32">
-                    <item row="0" column="0">
-                     <widget class="QLabel" name="error_label">
-                      <property name="text">
-                       <string>Error</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0">
-                     <widget class="QLabel" name="spiErrorRate_label">
-                      <property name="text">
-                       <string>SPI Error Rate</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="1">
-                     <widget class="QLineEdit" name="spiErrorRateText">
-                      <property name="readOnly">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QLineEdit" name="errorText">
-                      <property name="readOnly">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item row="3" column="0" colspan="3">
+                 <item row="2" column="0" colspan="3">
                   <widget class="QGroupBox" name="infoBox">
                    <property name="title">
                     <string>Info</string>
@@ -1680,16 +1648,32 @@
                      </widget>
                     </item>
                     <item row="18" column="1" colspan="2">
-                     <widget class="QLineEdit" name="absolutePositionText"/>
+                     <widget class="QLineEdit" name="absolutePositionText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="17" column="1" colspan="2">
-                     <widget class="QLineEdit" name="calibrationScanResponseText"/>
+                     <widget class="QLineEdit" name="calibrationScanResponseText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="16" column="1" colspan="2">
-                     <widget class="QLineEdit" name="velocityEstimateCountsText"/>
+                     <widget class="QLineEdit" name="velocityEstimateCountsText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="15" column="1" colspan="2">
-                     <widget class="QLineEdit" name="velocityEstimateText"/>
+                     <widget class="QLineEdit" name="velocityEstimateText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="8" column="0" colspan="3">
                      <widget class="QGroupBox" name="PositionEstimatesBox">
@@ -1712,16 +1696,32 @@
                         </widget>
                        </item>
                        <item row="0" column="1">
-                        <widget class="QLineEdit" name="linearPositionEstimateText"/>
+                        <widget class="QLineEdit" name="linearPositionEstimateText">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
                        </item>
                        <item row="1" column="1">
-                        <widget class="QLineEdit" name="linearPositionEstimateCountsText"/>
+                        <widget class="QLineEdit" name="linearPositionEstimateCountsText">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
                        </item>
                        <item row="4" column="1">
-                        <widget class="QLineEdit" name="circularPositionDeltaCprCountsText"/>
+                        <widget class="QLineEdit" name="circularPositionDeltaCprCountsText">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
                        </item>
                        <item row="3" column="1">
-                        <widget class="QLineEdit" name="circularPositionEstimateCprCountsText"/>
+                        <widget class="QLineEdit" name="circularPositionEstimateCprCountsText">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
                        </item>
                        <item row="4" column="0">
                         <widget class="QLabel" name="circularPositionDeltaCprCounts_label">
@@ -1738,7 +1738,11 @@
                         </widget>
                        </item>
                        <item row="2" column="1">
-                        <widget class="QLineEdit" name="circularPositionEstimateText"/>
+                        <widget class="QLineEdit" name="circularPositionEstimateText">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
                        </item>
                        <item row="2" column="0">
                         <widget class="QLabel" name="circularPositionEstimate_label">
@@ -1751,25 +1755,90 @@
                      </widget>
                     </item>
                     <item row="0" column="1" colspan="2">
-                     <widget class="QLineEdit" name="isReadyText"/>
+                     <widget class="QLineEdit" name="isReadyText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="1" column="1" colspan="2">
-                     <widget class="QLineEdit" name="indexFoundText"/>
+                     <widget class="QLineEdit" name="indexFoundText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="2" column="1" colspan="2">
-                     <widget class="QLineEdit" name="shadowCountText"/>
+                     <widget class="QLineEdit" name="shadowCountText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="3" column="1" colspan="2">
-                     <widget class="QLineEdit" name="countInCprText"/>
+                     <widget class="QLineEdit" name="countInCprText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="4" column="1" colspan="2">
-                     <widget class="QLineEdit" name="interpolationText"/>
+                     <widget class="QLineEdit" name="interpolationText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="5" column="1" colspan="2">
-                     <widget class="QLineEdit" name="phaseText"/>
+                     <widget class="QLineEdit" name="phaseText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                     <item row="6" column="1" colspan="2">
-                     <widget class="QLineEdit" name="hallStateText"/>
+                     <widget class="QLineEdit" name="hallStateText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="3">
+                  <widget class="QGroupBox" name="errorInfoBox">
+                   <property name="title">
+                    <string>Error Info</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_32">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="error_label">
+                      <property name="text">
+                       <string>Error</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="spiErrorRate_label">
+                      <property name="text">
+                       <string>SPI Error Rate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="spiErrorRateText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="errorText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
@@ -1879,11 +1948,11 @@
          </property>
          <layout class="QGridLayout" name="gridLayout_17">
           <item row="0" column="0">
-           <widget class="QScrollArea" name="canConfigScrollArea">
+           <widget class="QScrollArea" name="axisCanConfigScrollArea">
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
-            <widget class="QWidget" name="canConfigScrollAreaWidget">
+            <widget class="QWidget" name="axisCanConfigScrollAreaWidget">
              <property name="geometry">
               <rect>
                <x>0</x>
@@ -1894,13 +1963,13 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_27">
               <item row="0" column="0">
-               <widget class="QGroupBox" name="canConfigBox">
+               <widget class="QGroupBox" name="axisCanConfigBox">
                 <property name="title">
                  <string>Axis.Config.Can</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_22">
                  <item row="0" column="0">
-                  <widget class="QGroupBox" name="canStuffBox">
+                  <widget class="QGroupBox" name="axisCanStuffBox">
                    <property name="title">
                     <string>Can Stuff</string>
                    </property>
@@ -1927,17 +1996,17 @@
                      </widget>
                     </item>
                     <item row="0" column="0">
-                     <widget class="QLabel" name="nodeID_label">
+                     <widget class="QLabel" name="canNodeId_label">
                       <property name="text">
                        <string>Node ID</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLineEdit" name="nodeIDText"/>
+                     <widget class="QLineEdit" name="canNodeIdText"/>
                     </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="nodeIDSend">
+                     <widget class="QPushButton" name="canNodeIdSend">
                       <property name="text">
                        <string>Send</string>
                       </property>
@@ -3528,18 +3597,6 @@
                  <item row="4" column="1">
                   <widget class="QLineEdit" name="locConVelocityText"/>
                  </item>
-                 <item row="5" column="1">
-                  <widget class="QLineEdit" name="locConFinishDistanceText"/>
-                 </item>
-                 <item row="6" column="1">
-                  <widget class="QLineEdit" name="locConFinishOnVelocityText"/>
-                 </item>
-                 <item row="7" column="1">
-                  <widget class="QLineEdit" name="locConFinishOnDistanceText"/>
-                 </item>
-                 <item row="8" column="1">
-                  <widget class="QLineEdit" name="locConFinishOnEncoderIndexText"/>
-                 </item>
                  <item row="0" column="2">
                   <widget class="QPushButton" name="locConCurrentSend">
                    <property name="text">
@@ -3608,6 +3665,62 @@
                    <property name="text">
                     <string>Current</string>
                    </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QComboBox" name="locConFinishOnVelocitySelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QComboBox" name="locConFinishOnDistanceSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QComboBox" name="locConFinishOnEncoderIndexSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QComboBox" name="locConFinishDistanceSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
                   </widget>
                  </item>
                 </layout>
@@ -3789,19 +3902,46 @@
          <property name="autoFillBackground">
           <bool>true</bool>
          </property>
-         <widget class="QLabel" name="label_88">
-          <property name="geometry">
-           <rect>
-            <x>230</x>
-            <y>240</y>
-            <width>47</width>
-            <height>13</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>can</string>
-          </property>
-         </widget>
+         <layout class="QGridLayout" name="gridLayout_65">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="canGeneralScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="canGeneralScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_66">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="canGeneralBox">
+                <property name="title">
+                 <string>ODrive.Can</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_67">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="canError_label">
+                   <property name="text">
+                    <string>Error</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="canErrorText"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="canConfig" native="true">
          <property name="enabled">
@@ -3830,34 +3970,85 @@
          <property name="autoFillBackground">
           <bool>true</bool>
          </property>
-         <widget class="QLabel" name="label_89">
-          <property name="geometry">
-           <rect>
-            <x>230</x>
-            <y>240</y>
-            <width>47</width>
-            <height>13</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>can</string>
-          </property>
-         </widget>
+         <layout class="QGridLayout" name="gridLayout_68">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="canConfigScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="canConfigScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_69">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="conConfigBox">
+                <property name="title">
+                 <string>ODrive.Can.Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_70">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="canProtocolText"/>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="canBaudrateText"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="canBaudrate_label">
+                   <property name="text">
+                    <string>Baud Rate</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="canProtocol_label">
+                   <property name="text">
+                    <string>Protocol</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="canBaudRateSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="canProtocolSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <zorder>motor</zorder>
-        <zorder>axisCanConfig</zorder>
-        <zorder>canConfig</zorder>
         <zorder>general</zorder>
+        <zorder>axisGeneral</zorder>
+        <zorder>axisConfig</zorder>
+        <zorder>controllerGeneral</zorder>
+        <zorder>controllerAutotuning</zorder>
+        <zorder>encoderConfig</zorder>
+        <zorder>controllerConfig</zorder>
+        <zorder>encoderGeneral</zorder>
+        <zorder>axisCanConfig</zorder>
         <zorder>calibrationLockin</zorder>
         <zorder>lockinConfig</zorder>
         <zorder>canGeneral</zorder>
-        <zorder>axisGeneral</zorder>
-        <zorder>axisConfig</zorder>
-        <zorder>controllerConfig</zorder>
-        <zorder>controllerGeneral</zorder>
-        <zorder>controllerAutotuning</zorder>
-        <zorder>encoderGeneral</zorder>
-        <zorder>encoderConfig</zorder>
+        <zorder>canConfig</zorder>
        </widget>
       </item>
      </layout>

@@ -317,6 +317,71 @@ class GUI_Handler:
         self.window.sinCosGpioPinSinText.setText(str(encoderConfig.sincos_gpio_pin_sin))
         self.window.sinCosGpioPinCosText.setText(str(encoderConfig.sincos_gpio_pin_cos))
 
+    def axisCanConfig(self , axis : int):
+        drive_axis = getattr(self.drive, f'axis{axis}')
+        canConfig = drive_axis.config.can
+
+        self.window.canNodeIdText.setText(str(canConfig.node_id))
+        self.window.isExtendedText.setText(str(canConfig.is_extended))
+        self.window.heartbeatRateMsText.setText(str(canConfig.heartbeat_rate_ms))
+        self.window.encoderRateMsText.setText(str(canConfig.encoder_rate_ms))
+
+    def calibrationLockin(self, axis : int):
+        drive_axis = getattr(self.drive, f'axis{axis}')
+        callockin = drive_axis.config.calibration_lockin
+
+        self.window.calLocCurrentText.setText(str(callockin.current))
+        self.window.calLocRampTimeText.setText(str(callockin.ramp_time))
+        self.window.calLocRampDistanceText.setText(str(callockin.ramp_distance))
+        self.window.calLocAccelerationText.setText(str(callockin.accel))
+        self.window.calLocVelocityText.setText(str(callockin.vel))
+
+    def lockinConfig(self, axis : int, type : str):
+        drive_axis = getattr(self.drive, f'axis{axis}')
+        if type == 'generalLockin':
+            lockin = drive_axis.config.general_lockin
+        elif type == 'sensorlessRamp':
+            lockin = drive_axis.config.sensorless_ramp
+
+        self.window.locConCurrentText.setText(str(lockin.current))
+        self.window.locConRampTimeText.setText(str(lockin.ramp_time))
+        self.window.locConRampDistanceText.setText(str(lockin.ramp_distance))
+        self.window.locConAccelerationText.setText(str(lockin.accel))
+        self.window.locConVelocityText.setText(str(lockin.vel))
+
+        match lockin.finish_distance:
+            case True:
+                self.window.locConFinishDistanceSelector.setCurrentIndex(0)
+            case False:
+                self.window.locConFinishDistanceSelector.setCurrentIndex(1)
+        
+        match lockin.finish_on_vel:
+            case True:
+                self.window.locConFinishOnVelocitySelector.setCurrentIndex(0)
+            case False:
+                self.window.locConFinishOnVelocitySelector.setCurrentIndex(1)
+        
+        match lockin.finish_on_distance:
+            case True:
+                self.window.locConFinishOnDistanceSelector.setCurrentIndex(0)
+            case False:
+                self.window.locConFinishOnDistanceSelector.setCurrentIndex(1)
+
+        match lockin.finish_on_enc_idx:
+            case True:
+                self.window.locConFinishOnEncoderIndexSelector.setCurrentIndex(0)
+            case False:
+                self.window.locConFinishOnEncoderIndexSelector.setCurrentIndex(1)
+
+    def canGeneral(self):
+        can = self.drive.can
+        self.window.canErrorText.setText(str(can.error))
+
+    def canConfig(self):
+        canConfig = self.drive.can.config
+
+        self.window.canBaudrateText.setText(str(canConfig.baud_rate))
+        self.window.canProtocolText.setText(str(canConfig.protocol))
 
     #handles odrive connection button
     def odriveSelectHandler(self):
@@ -385,14 +450,37 @@ class GUI_Handler:
                                 self.controllerConfig(1)
                     case "Can":
                         self.setNewWidget("canConfig")
+                        if self.drive != None:
+                            self.canConfig()
+
             
             case "General Lockin":
                 self.setNewWidget("lockinConfig")
+                if self.drive != None:
+                    parent = parent.parent()
+                    if parent.text(0) == "Axis0":
+                        self.lockinConfig(0, 'generalLockin')
+                    elif parent.text(0) == "Axis1":
+                        self.lockinConfig(1, 'generalLockin')
+
             case "Sensorless Ramp":
                 self.setNewWidget("lockinConfig")
+                if self.drive != None:
+                    parent = parent.parent()
+                    if parent.text(0) == "Axis0":
+                        self.lockinConfig(0, 'sensorlessRamp')
+                    elif parent.text(0) == "Axis1":
+                        self.lockinConfig(1, 'sensorlessRamp')
+
 
             case "Calibration Lockin":
                 self.setNewWidget("calibrationLockin")
+                if self.drive != None:
+                    parent = parent.parent()
+                    if parent.text(0) == "Axis0":
+                        self.calibrationLockin(0)
+                    elif parent.text(0) == "Axis1":
+                        self.calibrationLockin(1)
 
             case "Controller":
                 self.setNewWidget("controllerGeneral")
@@ -426,10 +514,19 @@ class GUI_Handler:
             case "Can":
                 if parent == None:
                     self.setNewWidget("canGeneral")
+                    if self.drive != None:
+                        self.canGeneral()
                     pass
                 else:
                     match parent.text(0):
                         case "Config":
                             self.setNewWidget("axisCanConfig")
+                            if self.drive != None:
+                                parent = parent.parent()
+                                if parent.text(0) == "Axis0":
+                                    self.axisCanConfig(0)
+                                elif parent.text(0) == "Axis1":
+                                    self.axisCanConfig(1)
+
                         case "ODrive":
                             self.setNewWidget("canGeneral")
