@@ -80,87 +80,7 @@
         </item>
         <item>
          <property name="text">
-          <string>Axis0</string>
-         </property>
-         <item>
-          <property name="text">
-           <string>Config</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>Can</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>General Lockin</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Calibration Lockin</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Sensorless Ramp</string>
-           </property>
-          </item>
-         </item>
-         <item>
-          <property name="text">
-           <string>Controller</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>Autotuning</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Config</string>
-           </property>
-          </item>
-         </item>
-         <item>
-          <property name="text">
-           <string>Encoder</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>Config</string>
-           </property>
-          </item>
-         </item>
-         <item>
-          <property name="text">
-           <string>Motor</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>Config</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Current Control</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Fet Thermistor</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Motor Thermistor</string>
-           </property>
-          </item>
-         </item>
-        </item>
-        <item>
-         <property name="text">
-          <string>Axis1</string>
+          <string>Axis</string>
          </property>
          <item>
           <property name="text">
@@ -291,6 +211,120 @@
                  <string>General</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="4" column="0">
+                  <widget class="QGroupBox" name="controlsBox">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Controls</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="saveConfiguration">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Save Configuration</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="reboot">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Reboot</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QPushButton" name="enterDFUMode">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Enter DFU Mode</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="eraseConfiguration">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Erase Configuration</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QGroupBox" name="connectionBox">
+                   <property name="title">
+                    <string>Connection</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <item row="0" column="1">
+                     <widget class="QListWidget" name="odriveList">
+                      <property name="maximumSize">
+                       <size>
+                        <width>256</width>
+                        <height>128</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QPushButton" name="odriveSelect">
+                      <property name="text">
+                       <string>Select</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
                  <item row="0" column="0" rowspan="2" colspan="2">
                   <widget class="QGroupBox" name="generalInfoBox">
                    <property name="enabled">
@@ -377,115 +411,31 @@
                    </layout>
                   </widget>
                  </item>
-                 <item row="2" column="0">
-                  <widget class="QGroupBox" name="connectionBox">
-                   <property name="title">
-                    <string>Connection</string>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_10">
-                    <item row="0" column="1">
-                     <widget class="QListWidget" name="odriveList">
-                      <property name="maximumSize">
-                       <size>
-                        <width>256</width>
-                        <height>128</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="2">
-                     <widget class="QPushButton" name="odriveSelect">
-                      <property name="text">
-                       <string>Select</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
                  <item row="3" column="0">
-                  <widget class="QGroupBox" name="controlsBox">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
+                  <widget class="QGroupBox" name="axisSelectorBox">
                    <property name="title">
-                    <string>Controls</string>
+                    <string>Axis Selector</string>
                    </property>
-                   <layout class="QGridLayout" name="gridLayout_5">
+                   <layout class="QGridLayout" name="gridLayout_71">
                     <item row="0" column="0">
-                     <widget class="QPushButton" name="saveConfiguration">
-                      <property name="enabled">
-                       <bool>true</bool>
-                      </property>
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>32</height>
-                       </size>
-                      </property>
+                     <widget class="QLabel" name="axisSelector_label">
                       <property name="text">
-                       <string>Save Configuration</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0">
-                     <widget class="QPushButton" name="reboot">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>32</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Reboot</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="1">
-                     <widget class="QPushButton" name="enterDFUMode">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>32</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Enter DFU Mode</string>
+                       <string>Axis to config</string>
                       </property>
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QPushButton" name="eraseConfiguration">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>32</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Erase Configuration</string>
-                      </property>
+                     <widget class="QComboBox" name="axisSelector">
+                      <item>
+                       <property name="text">
+                        <string>Axis0</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axis1</string>
+                       </property>
+                      </item>
                      </widget>
                     </item>
                    </layout>
@@ -3477,7 +3427,7 @@
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="lockinConfig" native="true">
+        <widget class="QWidget" name="generalLockin" native="true">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -3506,11 +3456,11 @@
          </property>
          <layout class="QGridLayout" name="gridLayout_44">
           <item row="0" column="0">
-           <widget class="QScrollArea" name="lockingConfigScrollArea">
+           <widget class="QScrollArea" name="generalLockinScrollArea">
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
-            <widget class="QWidget" name="lockingConfigScrollAreaWidget">
+            <widget class="QWidget" name="generalLockinScrollAreaWidget">
              <property name="geometry">
               <rect>
                <x>0</x>
@@ -3523,152 +3473,152 @@
               <item row="0" column="0">
                <widget class="QGroupBox" name="lockinConfigBox">
                 <property name="title">
-                 <string>Lockin Config</string>
+                 <string>General Lockin Config</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_46">
                  <item row="2" column="0">
-                  <widget class="QLabel" name="locConRampDistance_label">
+                  <widget class="QLabel" name="generalLockinRampDistance_label">
                    <property name="text">
                     <string>Ramp Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="7" column="0">
-                  <widget class="QLabel" name="locConFinishOnDistance_label">
+                  <widget class="QLabel" name="generalLockinFinishOnDistance_label">
                    <property name="text">
                     <string>Finish on Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLabel" name="locConRampTime_label">
+                  <widget class="QLabel" name="generalLockinRampTime_label">
                    <property name="text">
                     <string>Ramp Time</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="0">
-                  <widget class="QLabel" name="locConAcceleration_label">
+                  <widget class="QLabel" name="generalLockinAcceleration_label">
                    <property name="text">
                     <string>Acceleration</string>
                    </property>
                   </widget>
                  </item>
                  <item row="5" column="0">
-                  <widget class="QLabel" name="locConFinishDistance_label">
+                  <widget class="QLabel" name="generalLockinFinishDistance_label">
                    <property name="text">
                     <string>Finish Distance</string>
                    </property>
                   </widget>
                  </item>
                  <item row="6" column="0">
-                  <widget class="QLabel" name="locConFinishOnVelocity_label">
+                  <widget class="QLabel" name="generalLockinFinishOnVelocity_label">
                    <property name="text">
                     <string>Finish on Velocity</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="0">
-                  <widget class="QLabel" name="locConVelocity_label">
+                  <widget class="QLabel" name="generalLockinVelocity_label">
                    <property name="text">
                     <string>Velocity</string>
                    </property>
                   </widget>
                  </item>
                  <item row="8" column="0">
-                  <widget class="QLabel" name="locConFinishOnEncoderIndex_label">
+                  <widget class="QLabel" name="generalLockinFinishOnEncoderIndex_label">
                    <property name="text">
                     <string>Finish on Encoder Index</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QLineEdit" name="locConCurrentText"/>
+                  <widget class="QLineEdit" name="generalLockinCurrentText"/>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QLineEdit" name="locConRampTimeText"/>
+                  <widget class="QLineEdit" name="generalLockinRampTimeText"/>
                  </item>
                  <item row="2" column="1">
-                  <widget class="QLineEdit" name="locConRampDistanceText"/>
+                  <widget class="QLineEdit" name="generalLockinRampDistanceText"/>
                  </item>
                  <item row="3" column="1">
-                  <widget class="QLineEdit" name="locConAccelerationText"/>
+                  <widget class="QLineEdit" name="generalLockinAccelerationText"/>
                  </item>
                  <item row="4" column="1">
-                  <widget class="QLineEdit" name="locConVelocityText"/>
+                  <widget class="QLineEdit" name="generalLockinVelocityText"/>
                  </item>
                  <item row="0" column="2">
-                  <widget class="QPushButton" name="locConCurrentSend">
+                  <widget class="QPushButton" name="generalLockinCurrentSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="2">
-                  <widget class="QPushButton" name="locConRampTimeSend">
+                  <widget class="QPushButton" name="generalLockinRampTimeSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="2">
-                  <widget class="QPushButton" name="locConRampDistanceSend">
+                  <widget class="QPushButton" name="generalLockinRampDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="2">
-                  <widget class="QPushButton" name="locConAccelerationSend">
+                  <widget class="QPushButton" name="generalLockinAccelerationSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="4" column="2">
-                  <widget class="QPushButton" name="locConVelocitySend">
+                  <widget class="QPushButton" name="generalLockinVelocitySend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="5" column="2">
-                  <widget class="QPushButton" name="locConFinishDistanceSend">
+                  <widget class="QPushButton" name="generalLockinFinishDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="6" column="2">
-                  <widget class="QPushButton" name="locConFinishOnVelocitySend">
+                  <widget class="QPushButton" name="generalLockinFinishOnVelocitySend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="7" column="2">
-                  <widget class="QPushButton" name="locConFinishOnDistanceSend">
+                  <widget class="QPushButton" name="generalLockinFinishOnDistanceSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="8" column="2">
-                  <widget class="QPushButton" name="locConFinishOnEncoderIndexSend">
+                  <widget class="QPushButton" name="generalLockinFinishOnEncoderIndexSend">
                    <property name="text">
                     <string>Send</string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="0">
-                  <widget class="QLabel" name="locConCurrent_label">
+                  <widget class="QLabel" name="generalLockinCurrent_label">
                    <property name="text">
                     <string>Current</string>
                    </property>
                   </widget>
                  </item>
                  <item row="6" column="1">
-                  <widget class="QComboBox" name="locConFinishOnVelocitySelector">
+                  <widget class="QComboBox" name="generalLockinFinishOnVelocitySelector">
                    <item>
                     <property name="text">
                      <string>True</string>
@@ -3682,7 +3632,7 @@
                   </widget>
                  </item>
                  <item row="7" column="1">
-                  <widget class="QComboBox" name="locConFinishOnDistanceSelector">
+                  <widget class="QComboBox" name="generalLockinFinishOnDistanceSelector">
                    <item>
                     <property name="text">
                      <string>True</string>
@@ -3696,7 +3646,7 @@
                   </widget>
                  </item>
                  <item row="8" column="1">
-                  <widget class="QComboBox" name="locConFinishOnEncoderIndexSelector">
+                  <widget class="QComboBox" name="generalLockinFinishOnEncoderIndexSelector">
                    <item>
                     <property name="text">
                      <string>True</string>
@@ -3710,7 +3660,7 @@
                   </widget>
                  </item>
                  <item row="5" column="1">
-                  <widget class="QComboBox" name="locConFinishDistanceSelector">
+                  <widget class="QComboBox" name="generalLockinFinishDistanceSelector">
                    <item>
                     <property name="text">
                      <string>True</string>
@@ -4035,8 +3985,262 @@
           </item>
          </layout>
         </widget>
+        <widget class="QWidget" name="sensorlessRamp" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>588</width>
+           <height>568</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>588</width>
+           <height>568</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_72">
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="sensorlessRampScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="sensorlessRampScrollAreaWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>568</width>
+               <height>548</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_73">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="sensorlessRampBox">
+                <property name="title">
+                 <string>Sensorless Ramp Config</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_74">
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="sensorlessRampRampDistance_label">
+                   <property name="text">
+                    <string>Ramp Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="sensorlessRampFinishOnDistance_label">
+                   <property name="text">
+                    <string>Finish on Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="sensorlessRampRampTime_label">
+                   <property name="text">
+                    <string>Ramp Time</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="sensorlessRampAcceleration_label">
+                   <property name="text">
+                    <string>Acceleration</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="sensorlessRampFinishDistance_label">
+                   <property name="text">
+                    <string>Finish Distance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="sensorlessRampFinishOnVelocity_label">
+                   <property name="text">
+                    <string>Finish on Velocity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="sensorlessRampVelocity_label">
+                   <property name="text">
+                    <string>Velocity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="sensorlessRampFinishOnEncoderIndex_label">
+                   <property name="text">
+                    <string>Finish on Encoder Index</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="sensorlessRampCurrentText"/>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="sensorlessRampRampTimeText"/>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="sensorlessRampRampDistanceText"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="sensorlessRampAccelerationText"/>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="sensorlessRampVelocityText"/>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="sensorlessRampCurrentSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="sensorlessRampRampTimeSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="sensorlessRampRampDistanceSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="sensorlessRampAccelerationSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="sensorlessRampVelocitySend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QPushButton" name="sensorlessRampFinishDistanceSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="sensorlessRampFinishOnVelocitySend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QPushButton" name="sensorlessRampFinishOnDistanceSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QPushButton" name="sensorlessRampFinishOnEncoderIndexSend">
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="sensorlessRampCurrent_label">
+                   <property name="text">
+                    <string>Current</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QComboBox" name="sensorlessRampFinishOnVelocitySelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QComboBox" name="sensorlessRampFinishOnDistanceSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QComboBox" name="sensorlessRampFinishOnEncoderIndexSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QComboBox" name="sensorlessRampFinishDistanceSelector">
+                   <item>
+                    <property name="text">
+                     <string>True</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>False</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
         <zorder>motor</zorder>
-        <zorder>general</zorder>
         <zorder>axisGeneral</zorder>
         <zorder>axisConfig</zorder>
         <zorder>controllerGeneral</zorder>
@@ -4046,9 +4250,11 @@
         <zorder>encoderGeneral</zorder>
         <zorder>axisCanConfig</zorder>
         <zorder>calibrationLockin</zorder>
-        <zorder>lockinConfig</zorder>
         <zorder>canGeneral</zorder>
         <zorder>canConfig</zorder>
+        <zorder>general</zorder>
+        <zorder>sensorlessRamp</zorder>
+        <zorder>generalLockin</zorder>
        </widget>
       </item>
      </layout>
