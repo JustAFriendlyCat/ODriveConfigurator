@@ -1,21 +1,41 @@
 import odrive
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
+from PyQt6 import QtCore
 import params
 
 class GUI_Handler:
     def __init__(self, window : QMainWindow):
         self.window = window
         self.drive = None
-        self.currentWidget = self.window.general
-        for widget in self.window.widgetGroup.children():
+        self.drive_axis = None
+        self.currentBox = self.window.generalBox
+
+        #set all boxes to not visible
+        skipFirst = 0
+        for widget in self.window.scrollAreaWidgetContents.children():
+            if skipFirst == 0:
+                skipFirst = 1
+                continue
+            
             widget.setVisible(False)
+        else:
+            #set generalBox to visible
+            self.currentBox.setVisible(True)
+        
+        #set all send buttons clicked handler to sendButtonHandler()
+        for button in params.sendButtons:
+            eval(f"self.window.{button}.clicked.connect(self.sendButtonHandler)")
+
+        #set all controls buttons clicked handler to controlButtonHandler()
+        for button in params.controls:
+            eval(f"self.window.{button}.clicked.connect(self.controlButtonHandler)")
 
     #makes old widget not visible and sets new widget visible
-    def setNewWidget(self, newWidget: str):
-        self.currentWidget.setVisible(False)
-        self.currentWidget = getattr(self.window, newWidget)
-        self.currentWidget.setVisible(True)
+    def setNewBox(self, newBox: str):
+        self.currentBox.setVisible(False)
+        self.currentBox = getattr(self.window, newBox)
+        self.currentBox.setVisible(True)
     
     #handles odrive connection button
     def odriveSelectHandler(self):
@@ -25,12 +45,56 @@ class GUI_Handler:
                     self.drive = drive_
                     self.odriveTreeHandler(item=self.window.odriveTree.currentItem())
 
+    #handles control buttons
+    def controlButtonHandler(self):
+        if self.drive != None:
+            buttonPressedName = self.window.sender().objectName()
+
+            match buttonPressedName:
+                case "reboot":
+                    self.drive.reboot()
+                case "clearErrors":
+                    self.drive.clear_errors()
+                    self.updateParams()
+                case "saveConfiguration":
+                    self.drive.save_configuration()
+                case "eraseConfiguration":
+                    confirmMessageBox = QMessageBox.question(self.window, "Confirm?", "Are you sure you want to erase the configuration?")
+                    if confirmMessageBox == QMessageBox.StandardButton.Yes:
+                        self.drive.erase_configuration()
+                
+    #handles all send buttons
+    def sendButtonHandler(self):
+        buttonPressed = self.window.sender()
+            
+        paramPrefix = buttonPressed.objectName()[:-4]
+        
+        if f"{paramPrefix}Text" in params.textBoxes:
+            woa = eval(f"self.window.{paramPrefix}Text").text()
+            s = params.textBoxes[f"{paramPrefix}Text"]
+        #elif f"{paramPrefix}Selector" in params.selectors:
+        else:
+            woa = eval(f"self.window.{paramPrefix}Selector").currentIndex()
+            s = params.selectors[f"{paramPrefix}Selector"]
+
+        
+        splitString = s.rsplit('.', 1)
+        #['self.drive.can.config', 'baud_rate']
+
+        setattr(eval(splitString[0]), splitString[1], woa)
+        #      self.drive.can.config  baud_rate       textbox value               
+
+        self.updateParams()
+
+        #"encoderModeSelector": "drive_axis.encoder.config.mode"
+        #"requestedStateSelector": "drive_axis.requested_state"
+
     #updates the axis parameters
-    def updateParams(self, axis: int):
-        if axis == 0:
-            drive_axis = self.drive.axis0
-        elif axis == 1:
-            drive_axis = self.drive.axis1
+    def updateParams(self):
+        if self.window.axisSelector.currentIndex() == 0:
+            self.drive_axis = self.drive.axis0
+        elif self.window.axisSelector.currentIndex() == 1:
+            self.drive_axis = self.drive.axis1
 
         for k, v in params.textBoxes.items():
             getattr(self.window, k).setText(str(eval(v)))
@@ -38,11 +102,11 @@ class GUI_Handler:
 
         for k, v in params.selectors.items():
             if eval(v) == True:
-                getattr(self.window, k).setCurrentIndex(0)
-            else:
                 getattr(self.window, k).setCurrentIndex(1)
+            else:
+                getattr(self.window, k).setCurrentIndex(0)
 
-        match drive_axis.requested_state:
+        match self.drive_axis.requested_state:
             #state 5 doesnt exist
             case 6:
                 self.window.requestedStateSelect.setCurrentIndex(5)
@@ -61,71 +125,70 @@ class GUI_Handler:
             case 13:
                 self.window.requestedStateSelect.setCurrentIndex(12)  
             case _:
-                self.window.requestedStateSelector.setCurrentIndex(drive_axis.requested_state)
+                self.window.requestedStateSelector.setCurrentIndex(self.drive_axis.requested_state)
         
-        match drive_axis.encoder.config.mode:
+        match self.drive_axis.encoder.config.mode:
             case 256:
-                self.window.modeSelector.setCurrentIndex(3)
+                self.window.encoderModeSelector.setCurrentIndex(3)
             case 257:
-                self.window.modeSelector.setCurrentIndex(4)
+                self.window.encoderModeSelector.setCurrentIndex(4)
             case 258:
-                self.window.modeSelector.setCurrentIndex(5)
+                self.window.encoderModeSelector.setCurrentIndex(5)
             case 259:
-                self.window.modeSelector.setCurrentIndex(6)
+                self.window.encoderModeSelector.setCurrentIndex(6)
             case 260:
-                self.window.modeSelector.setCurrentIndex(7)
+                self.window.encoderModeSelector.setCurrentIndex(7)
             case _:
-                self.window.modeSelector.setCurrentIndex(drive_axis.encoder.config.mode)
-            
+                self.window.encoderModeSelector.setCurrentIndex(self.drive_axis.encoder.config.mode)
+    
     #handles the main navigator/tree
     def odriveTreeHandler(self, item):
         parent = item.parent()
         itemText = item.text(0)
 
         if self.drive != None and self.window.vbusVoltage.text() == "0.0V":
-            if self.window.axisSelector.currentIndex() == 0:
-                self.updateParams(0)
-            elif self.window.axisSelector.currentIndex() == 1:
-                self.updateParams(1)
+            self.updateParams()
 
         match itemText:
             case "General":
-                self.setNewWidget("general")
+                self.setNewBox("generalBox")
                 for device in odrive.connected_devices:
-                    #if self.window.odriveList.findItems(str(device.serial_number), Qt.MatchContains):
-                    #    break
-                    self.window.odriveList.addItem(f"{device.serial_number}")
+                    if self.window.odriveList.findItems(str(device.serial_number), QtCore.Qt.MatchFlag.MatchContains):
+                        continue
+                    self.window.odriveList.addItem(str(device.serial_number))
             case "Axis":
-                self.setNewWidget("axisGeneral")
+                self.setNewBox("axisGeneralBox")
             case "Config":
                 match parent.text(0):
                     case "Axis":   
-                        self.setNewWidget("axisConfig")
+                        self.setNewBox("axisConfigBox")
                     case "Encoder":
-                        self.setNewWidget("encoderConfig")
+                        self.setNewBox("encoderConfigBox")
                     case "Controller":
-                        self.setNewWidget("controllerConfig")
+                        self.setNewBox("controllerConfigBox")
                     case "Can":
-                        self.setNewWidget("canConfig")
+                        self.setNewBox("canConfigBox")
+                    case "Motor":
+                        self.setNewBox("motorConfigBox")
             case "General Lockin":
-                self.setNewWidget("generalLockin")
+                self.setNewBox("generalLockinBox")
             case "Sensorless Ramp":
-                self.setNewWidget("sensorlessRamp")
+                self.setNewBox("sensorlessRampBox")
             case "Calibration Lockin":
-                self.setNewWidget("calibrationLockin")
+                self.setNewBox("calibrationLockinBox")
             case "Controller":
-                self.setNewWidget("controllerGeneral")     
+                self.setNewBox("controllerGeneralBox")     
             case "Autotuning":
-                self.setNewWidget("controllerAutotuning")
+                self.setNewBox("controllerAutotuningBox")
             case "Encoder":
-                self.setNewWidget("encoderGeneral")
+                self.setNewBox("encoderGeneralBox")
             case "Motor":
-                self.setNewWidget("motor")
+                self.setNewBox("motorBox")
             case "Can":
                 if parent == None:
-                    self.setNewWidget("canGeneral")
+                    self.setNewBox("canGeneralBox")
                     pass
                 elif parent.text(0) == "Config":
-                    self.setNewWidget("axisCanConfig")
+                    self.setNewBox("axisCanConfigBox")
                 elif parent.text(0) == "ODrive":
-                    self.setNewWidget("canGeneral")
+                    self.setNewBox("canGeneralBox")
