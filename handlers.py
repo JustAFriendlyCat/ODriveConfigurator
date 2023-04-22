@@ -90,7 +90,7 @@ class GUI_Handler:
 
     #handles control buttons
     def controlButtonHandler(self):
-        if self.drive != None: return
+        if self.drive == None: return
         
         buttonPressedName = self.window.sender().objectName()
 
