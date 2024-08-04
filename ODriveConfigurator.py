@@ -1,11 +1,15 @@
 import sys
 import odrive
 import handlers
+import dark_palette
 
 from PyQt6.QtWidgets import *
 from PyQt6.uic import loadUi
 
 app = QApplication(sys.argv)
+
+app.setStyle("Fusion")
+app.setPalette(dark_palette.PALETTE_DARK)
 
 window = QMainWindow()
 loadUi("untitled.ui", window)
