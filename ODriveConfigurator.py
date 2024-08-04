@@ -8,6 +8,7 @@ from PyQt6.uic import loadUi
 
 app = QApplication(sys.argv)
 
+app.setStyle("Fusion")
 app.setPalette(dark_palette.PALETTE_DARK)
 
 window = QMainWindow()
