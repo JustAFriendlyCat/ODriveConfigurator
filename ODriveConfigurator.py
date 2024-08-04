@@ -1,14 +1,11 @@
 import sys
 import odrive
 import handlers
-import qdarktheme
 
 from PyQt6.QtWidgets import *
 from PyQt6.uic import loadUi
 
 app = QApplication(sys.argv)
-
-qdarktheme.setup_theme("light")
 
 window = QMainWindow()
 loadUi("untitled.ui", window)
